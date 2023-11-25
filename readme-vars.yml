@@ -1,0 +1,46 @@
+---
+
+# project information
+project_name: faster-whisper
+project_url: "https://github.com/SYSTRAN/faster-whisper"
+project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/faster-whisper-logo.png"
+project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models."
+project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
+project_blurb_optional_extras_enabled: false
+
+# supported architectures
+available_architectures:
+  - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
+
+# development version
+development_versions: false
+
+# container parameters
+common_param_env_vars_enabled: true
+param_container_name: "{{ project_name }}"
+param_usage_include_env: true
+param_env_vars:
+  - { env_var: "WHISPER_MODEL", env_value: "tiny-int8", desc: "Whisper model that will be used for transcription." }
+param_usage_include_vols: true
+param_volumes:
+  - { vol_path: "/config", vol_host_path: "/path/to/data", desc: "Local path for Whisper config files." }
+param_usage_include_ports: true
+param_ports:
+  - { external_port: "10300", internal_port: "10300", port_desc: "Wyoming connection port." }
+
+# optional container parameters
+opt_param_usage_include_env: true
+opt_param_env_vars:
+  - { env_var: "WHISPER_BEAM", env_value: "1", desc: "Number of candidates to consider simultaneously during transcription." }
+  - { env_var: "WHISPER_LANG", env_value: "en", desc: "Language that you will speak to the add-on." }
+
+# application setup block
+app_setup_block_enabled: true
+app_setup_block: |
+  For use with Home Assistant, add the Wyoming integration and support the hostname/IP and port that Whisper is running add-on."
+
+  For more information see the [faster-whisper docs](https://github.com/SYSTRAN/faster-whisper),
+
+# changelog
+changelogs:
+  - { date: "25.11.23:", desc: "Initial Release." }
