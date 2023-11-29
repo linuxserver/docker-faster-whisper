@@ -41,7 +41,7 @@ Find us at:
 
 [Faster-whisper](https://github.com/SYSTRAN/faster-whisper) is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models.
 
-[![faster-whisper](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/faster-whisper-banner.png)](https://github.com/SYSTRAN/faster-whisper)
+[![faster-whisper](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/faster-whisper-logo.png)](https://github.com/SYSTRAN/faster-whisper)
 
 ## Supported Architectures
 
