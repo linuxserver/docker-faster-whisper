@@ -24,7 +24,7 @@ RUN \
   pip install -U --no-cache-dir \
     pip \
     wheel && \
-  pip install -U --no-cache-dir \
+  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/ubuntu/ \
     "wyoming-faster-whisper==${WHISPER_VERSION}" && \
   apt-get purge -y --auto-remove \
     build-essential \
