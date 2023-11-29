@@ -1,0 +1,25 @@
+---
+
+# jenkins variables
+project_name: docker-faster-whisper
+external_type: pip_version
+release_type: stable
+release_tag: latest
+ls_branch: main
+repo_vars:
+  - EXT_PIP = 'wyoming-faster-whisper'
+  - BUILD_VERSION_ARG = 'WHISPER_VERSION'
+  - LS_USER = 'linuxserver'
+  - LS_REPO = 'docker-faster-whisper'
+  - CONTAINER_NAME = 'faster-whisper'
+  - DOCKERHUB_IMAGE = 'linuxserver/faster-whisper'
+  - DEV_DOCKERHUB_IMAGE = 'lsiodev/faster-whisper'
+  - PR_DOCKERHUB_IMAGE = 'lspipepr/faster-whisper'
+  - DIST_IMAGE = 'ubuntu'
+  - MULTIARCH='false'
+  - CI='true'
+  - CI_WEB='false'
+  - CI_DELAY='120'
+  - CI_DOCKERENV='TZ=Europe/London|WHISPER_MODEL=tiny-int8'
+  - CI_AUTH='user:password'
+  - CI_WEBPATH=''
