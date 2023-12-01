@@ -37,7 +37,7 @@ opt_param_env_vars:
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
-  For use with Home Assistant [Assist](https://www.home-assistant.io/voice_control/voice_remote_local_assistant/), add the Wyoming integration and support the hostname/IP and port that Whisper is running add-on."
+  For use with Home Assistant [Assist](https://www.home-assistant.io/voice_control/voice_remote_local_assistant/), add the Wyoming integration and supply the hostname/IP and port that Whisper is running add-on."
 
   For more information see the [faster-whisper docs](https://github.com/SYSTRAN/faster-whisper),
 
