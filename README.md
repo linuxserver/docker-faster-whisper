@@ -117,7 +117,7 @@ Containers are configured using parameters passed at runtime (such as those abov
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
-| `-e WHISPER_MODEL=tiny-int8` | Whisper model that will be used for transcription. From `tiny`, `base`, `small` and `medium`, all with `-int8` compressed variants |
+| `-e WHISPER_MODEL=tiny-int8` | Whisper model that will be used for transcription. From `tiny`, `base`, `small` and `medium.en`, all with `-int8` compressed variants |
 | `-e WHISPER_BEAM=1` | Number of candidates to consider simultaneously during transcription. |
 | `-e WHISPER_LANG=en` | Language that you will speak to the add-on. |
 | `-v /config` | Local path for Whisper config files. |
