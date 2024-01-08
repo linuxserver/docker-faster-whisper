@@ -7,6 +7,7 @@ exec \
     s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z localhost 10300" \
         s6-setuidgid abc python3 -m wyoming_faster_whisper \
         --uri 'tcp://0.0.0.0:10300' \
+        --device gpu \
         --model "${WHISPER_MODEL}" \
         --beam-size "${WHISPER_BEAM:-1}" \
         --language "${WHISPER_LANG:-en}" \
