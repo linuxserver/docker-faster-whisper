@@ -3,9 +3,9 @@
 # jenkins variables
 project_name: docker-faster-whisper
 external_type: pip_version
-release_type: stable
-release_tag: latest
-ls_branch: main
+release_type: prerelease
+release_tag: gpu
+ls_branch: gpu
 repo_vars:
   - EXT_PIP = 'wyoming-faster-whisper'
   - BUILD_VERSION_ARG = 'WHISPER_VERSION'
