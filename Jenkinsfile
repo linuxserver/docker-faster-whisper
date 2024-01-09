@@ -26,7 +26,7 @@ pipeline {
     PR_DOCKERHUB_IMAGE = 'lspipepr/faster-whisper'
     DIST_IMAGE = 'ubuntu'
     MULTIARCH='false'
-    CI='true'
+    CI='false'
     CI_WEB='false'
     CI_DELAY='120'
     CI_DOCKERENV='TZ=Europe/London|WHISPER_MODEL=tiny-int8'
