@@ -13,14 +13,17 @@ available_architectures:
   - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
 
 # development version
-development_versions: false
+development_versions: true
+development_versions_items:
+  - { tag: "latest", desc: "Stable releases" }
+  - { tag: "gpu", desc: "Releases with Nvidia GPU support" }
 
 # container parameters
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
 param_usage_include_env: true
 param_env_vars:
-  - { env_var: "WHISPER_MODEL", env_value: "tiny-int8", desc: "Whisper model that will be used for transcription. From `tiny`, `base`, `small` and `medium.en`, all with `-int8` compressed variants", env_options: ["tiny-int8", "tiny", "base-int8", "base", "small-int8", "small", "medium-int8", "medium.en-int8"] }
+  - { env_var: "WHISPER_MODEL", env_value: "tiny-int8", desc: "Whisper model that will be used for transcription. From `tiny`, `base`, `small` and `medium`, all with `-int8` compressed variants", env_options: ["tiny-int8", "tiny", "base-int8", "base", "small-int8", "small", "medium-int8"] }
 param_usage_include_vols: true
 param_volumes:
   - { vol_path: "/config", vol_host_path: "/path/to/data", desc: "Local path for Whisper config files." }
@@ -39,8 +42,11 @@ app_setup_block_enabled: true
 app_setup_block: |
   For use with Home Assistant [Assist](https://www.home-assistant.io/voice_control/voice_remote_local_assistant/), add the Wyoming integration and supply the hostname/IP and port that Whisper is running add-on."
 
+  When using the `gpu` tag with Nvidia GPUs, make sure you set the container to use the `nvidia` runtime and that you have the [Nvidia Container Toolkit](https://github.com/NVIDIA/nvidia-container-toolkit) installed on the host and that you run the container with the correct GPU(s) exposed. See the [Nvidia Container Toolkit docs](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/sample-workload.html) for more details.
+
   For more information see the [faster-whisper docs](https://github.com/SYSTRAN/faster-whisper),
 
 # changelog
 changelogs:
+  - { date: "08.01.24:", desc: "Add GPU Branch." }
   - { date: "25.11.23:", desc: "Initial Release." }
