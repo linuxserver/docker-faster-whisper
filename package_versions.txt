@@ -16,7 +16,7 @@ charset-normalizer      3.3.2                                    python
 coloredlogs             15.0.1                                   python                   
 coreutils               8.32-4.1ubuntu1                          deb                      
 cron                    3.0pl1-137ubuntu3                        deb                      
-ctranslate2             4.0.0                                    python                   
+ctranslate2             4.1.0                                    python                   
 curl                    7.81.0-1ubuntu1.15                       deb                      
 dash                    0.5.11+git20210903+057cd650a4ed-3build1  deb                      
 debconf                 1.5.79ubuntu1                            deb                      
@@ -29,7 +29,7 @@ faster-whisper          1.0.1                                    python
 filelock                3.13.1                                   python                   
 findutils               4.8.0-1ubuntu3                           deb                      
 flatbuffers             24.3.7                                   python                   
-fsspec                  2024.2.0                                 python                   
+fsspec                  2024.3.0                                 python                   
 gcc-12-base             12.3.0-1ubuntu1~22.04                    deb                      
 gnupg                   2.2.27-3ubuntu2.1                        deb                      
 gnupg-l10n              2.2.27-3ubuntu2.1                        deb                      
@@ -68,7 +68,7 @@ libcrypt1               1:4.4.27-1                               deb
 libcurl4                7.81.0-1ubuntu1.15                       deb                      
 libdb5.3                5.3.28+dfsg1-0.8ubuntu3                  deb                      
 libdebconfclient0       0.261ubuntu1                             deb                      
-libexpat1               2.4.7-1ubuntu0.2                         deb                      
+libexpat1               2.4.7-1ubuntu0.3                         deb                      
 libext2fs2              1.46.5-2ubuntu1.1                        deb                      
 libffi8                 3.4.2-4                                  deb                      
 libgcc-s1               12.3.0-1ubuntu1~22.04                    deb                      
@@ -161,7 +161,7 @@ perl-base               5.34.0-3ubuntu1.3                        deb
 pinentry-curses         1.1.1-1build2                            deb                      
 pip                     24.0                                     python                   
 procps                  2:3.3.17-6ubuntu2                        deb                      
-protobuf                4.25.3                                   python                   
+protobuf                5.26.0                                   python                   
 publicsuffix            20211207.1025-1                          deb                      
 python3                 3.10.6-1~22.04                           deb                      
 python3-distutils       3.10.8-1~22.04                           deb                      
@@ -189,7 +189,7 @@ ubuntu-keyring          2021.03.26                               deb
 urllib3                 2.2.1                                    python                   
 usrmerge                25ubuntu2                                deb                      
 util-linux              2.37.2-4ubuntu3                          deb                      
-wheel                   0.42.0                                   python                   
+wheel                   0.43.0                                   python                   
 wyoming                 1.5.2                                    python                   
 wyoming_faster_whisper  2.0.0                                    python                   
 zlib1g                  1:1.2.11.dfsg-2ubuntu9.2                 deb                      
