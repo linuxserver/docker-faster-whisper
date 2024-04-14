@@ -26,7 +26,7 @@ dirmngr                 2.2.27-3ubuntu2.1                        deb
 dpkg                    1.21.1ubuntu2.3                          deb                      
 e2fsprogs               1.46.5-2ubuntu1.1                        deb                      
 faster-whisper          1.0.1                                    python                   
-filelock                3.13.3                                   python                   
+filelock                3.13.4                                   python                   
 findutils               4.8.0-1ubuntu3                           deb                      
 flatbuffers             24.3.25                                  python                   
 fsspec                  2024.3.1                                 python                   
@@ -46,7 +46,7 @@ gzip                    1.10-4ubuntu4.1                          deb
 hostname                3.23ubuntu2                              deb                      
 huggingface-hub         0.22.2                                   python                   
 humanfriendly           10.0                                     python                   
-idna                    3.6                                      python                   
+idna                    3.7                                      python                   
 init-system-helpers     1.62                                     deb                      
 jq                      1.6-2.1ubuntu3                           deb                      
 libacl1                 2.3.1-1                                  deb                      
@@ -150,7 +150,7 @@ ncurses-bin             6.3-2ubuntu0.1                           deb
 netcat                  1.218-4ubuntu1                           deb                      
 netcat-openbsd          1.218-4ubuntu1                           deb                      
 numpy                   1.26.4                                   python                   
-onnxruntime             1.17.1                                   python                   
+onnxruntime             1.17.3                                   python                   
 openssl                 3.0.2-0ubuntu1.15                        deb                      
 packaging               24.0                                     python                   
 passwd                  1:4.8.1-2ubuntu2.2                       deb                      
