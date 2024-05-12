@@ -8,9 +8,9 @@ av                      11.0.0                                   python
 base-files              12ubuntu4.6                              deb                      
 base-passwd             3.5.52build1                             deb                      
 bash                    5.1-6ubuntu1.1                           deb                      
-bash                    5.1.16                                   binary                   
 bsdutils                1:2.37.2-4ubuntu3.4                      deb                      
 ca-certificates         20230311ubuntu0.22.04.1                  deb                      
+catatonit               0.1.7-1                                  deb                      
 certifi                 2024.2.2                                 python                   
 charset-normalizer      3.3.2                                    python                   
 coloredlogs             15.0.1                                   python                   
