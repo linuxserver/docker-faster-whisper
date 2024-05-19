@@ -48,5 +48,6 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "19.05.24:", desc: "Bump CUDA to 12." }
   - { date: "08.01.24:", desc: "Add GPU Branch." }
   - { date: "25.11.23:", desc: "Initial Release." }
