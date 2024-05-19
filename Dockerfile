@@ -25,8 +25,8 @@ RUN \
     pip \
     wheel && \
   pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/ubuntu/ \
-    nvidia-cublas-cu11 \
-    nvidia-cudnn-cu11 \
+    nvidia-cublas-cu12 \
+    nvidia-cudnn-cu12==8.9.7.29 \
     "wyoming-faster-whisper==${WHISPER_VERSION}" && \
   apt-get purge -y --auto-remove \
     build-essential \
