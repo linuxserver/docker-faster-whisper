@@ -292,5 +292,6 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **19.05.24:** - Bump CUDA to 12.
 * **08.01.24:** - Add GPU Branch.
 * **25.11.23:** - Initial Release.
