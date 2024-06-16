@@ -16,7 +16,7 @@ charset-normalizer      3.3.2                                    python
 coloredlogs             15.0.1                                   python                   
 coreutils               8.32-4.1ubuntu1.2                        deb                      
 cron                    3.0pl1-137ubuntu3                        deb                      
-ctranslate2             4.2.1                                    python                   
+ctranslate2             4.3.1                                    python                   
 curl                    7.81.0-1ubuntu1.16                       deb                      
 dash                    0.5.11+git20210903+057cd650a4ed-3build1  deb                      
 debconf                 1.5.79ubuntu1                            deb                      
@@ -26,7 +26,7 @@ dirmngr                 2.2.27-3ubuntu2.1                        deb
 dpkg                    1.21.1ubuntu2.3                          deb                      
 e2fsprogs               1.46.5-2ubuntu1.1                        deb                      
 faster-whisper          1.0.1                                    python                   
-filelock                3.14.0                                   python                   
+filelock                3.15.1                                   python                   
 findutils               4.8.0-1ubuntu3                           deb                      
 flatbuffers             24.3.25                                  python                   
 fsspec                  2024.6.0                                 python                   
@@ -44,7 +44,7 @@ gpgv                    2.2.27-3ubuntu2.1                        deb
 grep                    3.7-1build1                              deb                      
 gzip                    1.10-4ubuntu4.1                          deb                      
 hostname                3.23ubuntu2                              deb                      
-huggingface-hub         0.23.3                                   python                   
+huggingface-hub         0.23.4                                   python                   
 humanfriendly           10.0                                     python                   
 idna                    3.7                                      python                   
 init-system-helpers     1.62                                     deb                      
@@ -152,7 +152,7 @@ netcat-openbsd          1.218-4ubuntu1                           deb
 numpy                   1.26.4                                   python                   
 onnxruntime             1.18.0                                   python                   
 openssl                 3.0.2-0ubuntu1.15                        deb                      
-packaging               24.0                                     python                   
+packaging               24.1                                     python                   
 passwd                  1:4.8.1-2ubuntu2.2                       deb                      
 perl-base               5.34.0-3ubuntu1.3                        deb                      
 pinentry-curses         1.1.1-1build2                            deb                      
