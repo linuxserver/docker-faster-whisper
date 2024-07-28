@@ -44,7 +44,7 @@ gpgv                    2.2.27-3ubuntu2.1                        deb
 grep                    3.7-1build1                              deb                      
 gzip                    1.10-4ubuntu4.1                          deb                      
 hostname                3.23ubuntu2                              deb                      
-huggingface-hub         0.24.0                                   python                   
+huggingface-hub         0.24.2                                   python                   
 humanfriendly           10.0                                     python                   
 idna                    3.7                                      python                   
 init-system-helpers     1.62                                     deb                      
