@@ -1,5 +1,4 @@
 NAME                    VERSION                                  TYPE                    
-PyYAML                  6.0.1                                    python                   
 Simple Launcher         1.1.0.14                                 dotnet  (+5 duplicates)  
 adduser                 3.118ubuntu5                             deb                      
 apt                     2.4.12                                   deb                      
@@ -44,7 +43,7 @@ gpgv                    2.2.27-3ubuntu2.1                        deb
 grep                    3.7-1build1                              deb                      
 gzip                    1.10-4ubuntu4.1                          deb                      
 hostname                3.23ubuntu2                              deb                      
-huggingface-hub         0.24.2                                   python                   
+huggingface-hub         0.24.5                                   python                   
 humanfriendly           10.0                                     python                   
 idna                    3.7                                      python                   
 init-system-helpers     1.62                                     deb                      
@@ -85,8 +84,8 @@ libkeyutils1            1.6.1-2ubuntu3                           deb
 libkrb5-3               1.19.2-2ubuntu0.3                        deb                      
 libkrb5support0         1.19.2-2ubuntu0.3                        deb                      
 libksba8                1.6.0-2ubuntu0.2                         deb                      
-libldap-2.5-0           2.5.18+dfsg-0ubuntu0.22.04.1             deb                      
-libldap-common          2.5.18+dfsg-0ubuntu0.22.04.1             deb                      
+libldap-2.5-0           2.5.18+dfsg-0ubuntu0.22.04.2             deb                      
+libldap-common          2.5.18+dfsg-0ubuntu0.22.04.2             deb                      
 liblz4-1                1.9.3-2build2                            deb                      
 liblzma5                5.2.5-2ubuntu1                           deb                      
 libmd0                  1.0.4-1build1                            deb                      
@@ -109,8 +108,8 @@ libpcre3                2:8.39-13ubuntu0.22.04.1                 deb
 libprocps8              2:3.3.17-6ubuntu2.1                      deb                      
 libpsl5                 0.21.0-1.2build2                         deb                      
 libpython3-stdlib       3.10.6-1~22.04                           deb                      
-libpython3.10-minimal   3.10.12-1~22.04.4                        deb                      
-libpython3.10-stdlib    3.10.12-1~22.04.4                        deb                      
+libpython3.10-minimal   3.10.12-1~22.04.5                        deb                      
+libpython3.10-stdlib    3.10.12-1~22.04.5                        deb                      
 libreadline8            8.1.2-1                                  deb                      
 librtmp1                2.4+20151223.gitfa8646d.1-2build4        deb                      
 libsasl2-2              2.1.27+dfsg2-3ubuntu1.2                  deb                      
@@ -156,9 +155,9 @@ packaging               24.1                                     python
 passwd                  1:4.8.1-2ubuntu2.2                       deb                      
 perl-base               5.34.0-3ubuntu1.3                        deb                      
 pinentry-curses         1.1.1-1build2                            deb                      
-pip                     24.1.2                                   python                   
+pip                     24.2                                     python                   
 procps                  2:3.3.17-6ubuntu2.1                      deb                      
-protobuf                5.27.2                                   python                   
+protobuf                5.27.3                                   python                   
 publicsuffix            20211207.1025-1                          deb                      
 python3                 3.10.6-1~22.04                           deb                      
 python3-distutils       3.10.8-1~22.04                           deb                      
@@ -167,9 +166,10 @@ python3-minimal         3.10.6-1~22.04                           deb
 python3-pip-whl         22.0.2+dfsg-1ubuntu0.4                   deb                      
 python3-setuptools-whl  59.6.0-1.2ubuntu0.22.04.1                deb                      
 python3-venv            3.10.6-1~22.04                           deb                      
-python3.10              3.10.12-1~22.04.4                        deb                      
-python3.10-minimal      3.10.12-1~22.04.4                        deb                      
-python3.10-venv         3.10.12-1~22.04.4                        deb                      
+python3.10              3.10.12-1~22.04.5                        deb                      
+python3.10-minimal      3.10.12-1~22.04.5                        deb                      
+python3.10-venv         3.10.12-1~22.04.5                        deb                      
+pyyaml                  6.0.1                                    python                   
 readline-common         8.1.2-1                                  deb                      
 requests                2.32.3                                   python                   
 sed                     4.8-1ubuntu2                             deb                      
@@ -179,8 +179,8 @@ sympy                   1.13.1                                   python
 sysvinit-utils          3.01-1ubuntu1                            deb                      
 tar                     1.34+dfsg-1ubuntu0.1.22.04.2             deb                      
 tokenizers              0.15.2                                   python                   
-tqdm                    4.66.4                                   python                   
-typing_extensions       4.12.2                                   python                   
+tqdm                    4.66.5                                   python                   
+typing-extensions       4.12.2                                   python                   
 tzdata                  2024a-0ubuntu0.22.04.1                   deb                      
 ubuntu-keyring          2021.03.26                               deb                      
 urllib3                 2.2.2                                    python                   
@@ -188,5 +188,5 @@ usrmerge                25ubuntu2                                deb
 util-linux              2.37.2-4ubuntu3.4                        deb                      
 wheel                   0.43.0                                   python                   
 wyoming                 1.5.2                                    python                   
-wyoming_faster_whisper  2.0.0                                    python                   
+wyoming-faster-whisper  2.0.0                                    python                   
 zlib1g                  1:1.2.11.dfsg-2ubuntu9.2                 deb                      
