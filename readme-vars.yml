@@ -6,7 +6,6 @@ project_url: "https://github.com/SYSTRAN/faster-whisper"
 project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/faster-whisper-logo.png"
 project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container provides a Wyoming protocol server for faster-whisper."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
-project_blurb_optional_extras_enabled: false
 
 # supported architectures
 available_architectures:
@@ -37,6 +36,8 @@ opt_param_env_vars:
   - { env_var: "WHISPER_BEAM", env_value: "1", desc: "Number of candidates to consider simultaneously during transcription." }
   - { env_var: "WHISPER_LANG", env_value: "en", desc: "Language that you will speak to the add-on." }
 
+readonly_supported: true
+
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
@@ -48,4 +49,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "18.07.24:", desc: "Rebase to Ubuntu Noble." }
+  - { date: "19.05.24:", desc: "Bump CUDA to 12 on GPU branch." }
+  - { date: "08.01.24:", desc: "Add GPU branch." }
   - { date: "25.11.23:", desc: "Initial Release." }
