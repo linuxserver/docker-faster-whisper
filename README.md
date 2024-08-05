@@ -73,6 +73,11 @@ When using the `gpu` tag with Nvidia GPUs, make sure you set the container to us
 
 For more information see the [faster-whisper docs](https://github.com/SYSTRAN/faster-whisper),
 
+## Read-Only Operation
+
+This image can be run with a read-only container filesystem. For details please [read the docs](https://docs.linuxserver.io/misc/read-only/).
+
+
 ## Usage
 
 To help you get started creating a container from this image you can either use docker-compose or the docker cli.
@@ -130,6 +135,7 @@ Containers are configured using parameters passed at runtime (such as those abov
 | `-e WHISPER_BEAM=1` | Number of candidates to consider simultaneously during transcription. |
 | `-e WHISPER_LANG=en` | Language that you will speak to the add-on. |
 | `-v /config` | Local path for Whisper config files. |
+| `--read-only=true` | Run container with a read-only filesystem. Please [read the docs](https://docs.linuxserver.io/misc/read-only/). |
 
 ## Environment variables from files (Docker secrets)
 
@@ -292,6 +298,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
-* **19.05.24:** - Bump CUDA to 12.
-* **08.01.24:** - Add GPU Branch.
+* **18.07.24:** - Rebase to Ubuntu Noble.
+* **19.05.24:** - Bump CUDA to 12 on GPU branch.
+* **08.01.24:** - Add GPU branch.
 * **25.11.23:** - Initial Release.
