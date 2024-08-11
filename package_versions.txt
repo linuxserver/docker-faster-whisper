@@ -16,7 +16,7 @@ coloredlogs             15.0.1                                   python
 coreutils               8.32-4.1ubuntu1.2                        deb                      
 cron                    3.0pl1-137ubuntu3                        deb                      
 ctranslate2             4.3.1                                    python                   
-curl                    7.81.0-1ubuntu1.16                       deb                      
+curl                    7.81.0-1ubuntu1.17                       deb                      
 dash                    0.5.11+git20210903+057cd650a4ed-3build1  deb                      
 debconf                 1.5.79ubuntu1                            deb                      
 debianutils             5.5-1ubuntu2                             deb                      
@@ -64,7 +64,7 @@ libcap-ng0              0.7.9-2.2build3                          deb
 libcap2                 1:2.44-1ubuntu0.22.04.1                  deb                      
 libcom-err2             1.46.5-2ubuntu1.1                        deb                      
 libcrypt1               1:4.4.27-1                               deb                      
-libcurl4                7.81.0-1ubuntu1.16                       deb                      
+libcurl4                7.81.0-1ubuntu1.17                       deb                      
 libdb5.3                5.3.28+dfsg1-0.8ubuntu3                  deb                      
 libdebconfclient0       0.261ubuntu1                             deb                      
 libexpat1               2.4.7-1ubuntu0.3                         deb                      
@@ -124,7 +124,7 @@ libsmartcols1           2.37.2-4ubuntu3.4                        deb
 libsqlite3-0            3.37.2-2ubuntu0.3                        deb                      
 libss2                  1.46.5-2ubuntu1.1                        deb                      
 libssh-4                0.9.6-2ubuntu0.22.04.3                   deb                      
-libssl3                 3.0.2-0ubuntu1.16                        deb                      
+libssl3                 3.0.2-0ubuntu1.17                        deb                      
 libstdc++6              12.3.0-1ubuntu1~22.04                    deb                      
 libsystemd0             249.11-0ubuntu3.12                       deb                      
 libtasn1-6              4.18.0-4build1                           deb                      
@@ -153,7 +153,7 @@ nvidia-cublas-cu12      12.6.0.22                                python
 nvidia-cuda-nvrtc-cu12  12.6.20                                  python                   
 nvidia-cudnn-cu12       8.9.7.29                                 python                   
 onnxruntime             1.18.1                                   python                   
-openssl                 3.0.2-0ubuntu1.16                        deb                      
+openssl                 3.0.2-0ubuntu1.17                        deb                      
 packaging               24.1                                     python                   
 passwd                  1:4.8.1-2ubuntu2.2                       deb                      
 perl-base               5.34.0-3ubuntu1.3                        deb                      
@@ -172,7 +172,7 @@ python3-venv            3.10.6-1~22.04                           deb
 python3.10              3.10.12-1~22.04.5                        deb                      
 python3.10-minimal      3.10.12-1~22.04.5                        deb                      
 python3.10-venv         3.10.12-1~22.04.5                        deb                      
-pyyaml                  6.0.1                                    python                   
+pyyaml                  6.0.2                                    python                   
 readline-common         8.1.2-1                                  deb                      
 requests                2.32.3                                   python                   
 sed                     4.8-1ubuntu2                             deb                      
@@ -189,7 +189,7 @@ ubuntu-keyring          2021.03.26                               deb
 urllib3                 2.2.2                                    python                   
 usrmerge                25ubuntu2                                deb                      
 util-linux              2.37.2-4ubuntu3.4                        deb                      
-wheel                   0.43.0                                   python                   
+wheel                   0.44.0                                   python                   
 wyoming                 1.5.2                                    python                   
 wyoming-faster-whisper  2.0.0                                    python                   
 zlib1g                  1:1.2.11.dfsg-2ubuntu9.2                 deb                      
