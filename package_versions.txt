@@ -28,10 +28,10 @@ dirmngr                      2.4.4-2ubuntu17                    deb
 dpkg                         1.22.6ubuntu6.1                    deb                      
 e2fsprogs                    1.47.0-2.4~exp1ubuntu4.1           deb                      
 faster-whisper               1.0.1                              python                   
-filelock                     3.15.4                             python                   
+filelock                     3.16.0                             python                   
 findutils                    4.9.0-5build1                      deb                      
 flatbuffers                  24.3.25                            python                   
-fsspec                       2024.6.1                           python                   
+fsspec                       2024.9.0                           python                   
 gcc-14-base                  14-20240412-0ubuntu1               deb                      
 gnupg                        2.4.4-2ubuntu17                    deb                      
 gnupg-l10n                   2.4.4-2ubuntu17                    deb                      
@@ -130,7 +130,7 @@ libsmartcols1                2.39.3-9ubuntu6.1                  deb
 libsqlite3-0                 3.45.1-1ubuntu2                    deb                      
 libss2                       1.47.0-2.4~exp1ubuntu4.1           deb                      
 libssh-4                     0.10.6-2build2                     deb                      
-libssl3t64                   3.0.13-0ubuntu3.3                  deb                      
+libssl3t64                   3.0.13-0ubuntu3.4                  deb                      
 libstdc++6                   14-20240412-0ubuntu1               deb                      
 libsystemd0                  255.4-1ubuntu8.4                   deb                      
 libtasn1-6                   4.19.0-3build1                     deb                      
@@ -153,9 +153,9 @@ ncurses-base                 6.4+20240113-1ubuntu2              deb
 ncurses-bin                  6.4+20240113-1ubuntu2              deb                      
 netbase                      6.4                                deb                      
 netcat-openbsd               1.226-1ubuntu2                     deb                      
-numpy                        2.1.0                              python                   
-onnxruntime                  1.19.0                             python                   
-openssl                      3.0.13-0ubuntu3.3                  deb                      
+numpy                        2.1.1                              python                   
+onnxruntime                  1.19.2                             python                   
+openssl                      3.0.13-0ubuntu3.4                  deb                      
 packaging                    24.1                               python  (+1 duplicate)   
 passwd                       1:4.13+dfsg1-4ubuntu3              deb                      
 perl-base                    5.38.2-3.2build2                   deb                      
@@ -178,7 +178,7 @@ readline-common              8.2-4build1                        deb
 requests                     2.32.3                             python                   
 sed                          4.9-2build1                        deb                      
 sensible-utils               0.0.22                             deb                      
-setuptools                   74.0.0                             python                   
+setuptools                   74.1.2                             python                   
 sympy                        1.13.2                             python                   
 systemd-standalone-sysusers  255.4-1ubuntu8.4                   deb                      
 sysvinit-utils               3.08-6ubuntu3                      deb                      
