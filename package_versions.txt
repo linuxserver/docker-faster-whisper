@@ -45,7 +45,7 @@ gpgv                         2.4.4-2ubuntu17                    deb
 grep                         3.11-4build1                       deb                      
 gzip                         1.12-1ubuntu3                      deb                      
 hostname                     3.23+nmu2ubuntu2                   deb                      
-huggingface-hub              0.25.0                             python                   
+huggingface-hub              0.25.1                             python                   
 humanfriendly                10.0                               python                   
 idna                         3.10                               python                   
 importlib-metadata           8.0.0                              python                   
@@ -112,7 +112,7 @@ libpam-modules-bin           1.5.3-5ubuntu5.1                   deb
 libpam-runtime               1.5.3-5ubuntu5.1                   deb                      
 libpam0g                     1.5.3-5ubuntu5.1                   deb                      
 libpcre2-8-0                 10.42-4ubuntu2                     deb                      
-libproc2-0                   2:4.0.4-4ubuntu3                   deb                      
+libproc2-0                   2:4.0.4-4ubuntu3.1                 deb                      
 libpsl5t64                   0.21.2-1.1build1                   deb                      
 libpython3-stdlib            3.12.3-0ubuntu2                    deb                      
 libpython3.12-minimal        3.12.3-1ubuntu0.2                  deb                      
@@ -166,7 +166,7 @@ perl-base                    5.38.2-3.2build2                   deb
 pinentry-curses              1.2.1-3ubuntu5                     deb                      
 pip                          24.2                               python                   
 platformdirs                 4.2.2                              python                   
-procps                       2:4.0.4-4ubuntu3                   deb                      
+procps                       2:4.0.4-4ubuntu3.1                 deb                      
 protobuf                     5.28.2                             python                   
 publicsuffix                 20231001.0357-0.1                  deb                      
 python3                      3.12.3-0ubuntu2                    deb                      
