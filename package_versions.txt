@@ -32,7 +32,7 @@ filelock                     3.16.1                             python
 findutils                    4.9.0-5build1                      deb                      
 flatbuffers                  24.3.25                            python                   
 fsspec                       2024.9.0                           python                   
-gcc-14-base                  14-20240412-0ubuntu1               deb                      
+gcc-14-base                  14.2.0-4ubuntu2~24.04              deb                      
 gnupg                        2.4.4-2ubuntu17                    deb                      
 gnupg-l10n                   2.4.4-2ubuntu17                    deb                      
 gnupg-utils                  2.4.4-2ubuntu17                    deb                      
@@ -45,7 +45,7 @@ gpgv                         2.4.4-2ubuntu17                    deb
 grep                         3.11-4build1                       deb                      
 gzip                         1.12-1ubuntu3                      deb                      
 hostname                     3.23+nmu2ubuntu2                   deb                      
-huggingface-hub              0.25.2                             python                   
+huggingface-hub              0.26.0                             python                   
 humanfriendly                10.0                               python                   
 idna                         3.10                               python                   
 importlib-metadata           8.0.0                              python                   
@@ -81,7 +81,7 @@ libdebconfclient0            0.271ubuntu3                       deb
 libexpat1                    2.6.1-2ubuntu0.1                   deb                      
 libext2fs2t64                1.47.0-2.4~exp1ubuntu4.1           deb                      
 libffi8                      3.4.6-1build1                      deb                      
-libgcc-s1                    14-20240412-0ubuntu1               deb                      
+libgcc-s1                    14.2.0-4ubuntu2~24.04              deb                      
 libgcrypt20                  1.10.3-2build1                     deb                      
 libgmp10                     2:6.3.0+dfsg-2ubuntu6              deb                      
 libgnutls30t64               3.8.3-1.1ubuntu3.2                 deb                      
@@ -132,7 +132,7 @@ libsqlite3-0                 3.45.1-1ubuntu2                    deb
 libss2                       1.47.0-2.4~exp1ubuntu4.1           deb                      
 libssh-4                     0.10.6-2build2                     deb                      
 libssl3t64                   3.0.13-0ubuntu3.4                  deb                      
-libstdc++6                   14-20240412-0ubuntu1               deb                      
+libstdc++6                   14.2.0-4ubuntu2~24.04              deb                      
 libsystemd0                  255.4-1ubuntu8.4                   deb                      
 libtasn1-6                   4.19.0-3build1                     deb                      
 libtinfo6                    6.4+20240113-1ubuntu2              deb                      
@@ -179,7 +179,7 @@ readline-common              8.2-4build1                        deb
 requests                     2.32.3                             python                   
 sed                          4.9-2build1                        deb                      
 sensible-utils               0.0.22                             deb                      
-setuptools                   75.1.0                             python                   
+setuptools                   75.2.0                             python                   
 sympy                        1.13.3                             python                   
 systemd-standalone-sysusers  255.4-1ubuntu8.4                   deb                      
 sysvinit-utils               3.08-6ubuntu3                      deb                      
