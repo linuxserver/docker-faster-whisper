@@ -45,7 +45,7 @@ gpgv                         2.4.4-2ubuntu17                    deb
 grep                         3.11-4build1                       deb                      
 gzip                         1.12-1ubuntu3                      deb                      
 hostname                     3.23+nmu2ubuntu2                   deb                      
-huggingface-hub              0.26.1                             python                   
+huggingface-hub              0.26.2                             python                   
 humanfriendly                10.0                               python                   
 idna                         3.10                               python                   
 importlib-metadata           8.0.0                              python                   
@@ -156,15 +156,14 @@ netbase                      6.4                                deb
 netcat-openbsd               1.226-1ubuntu2                     deb                      
 numpy                        2.1.2                              python                   
 nvidia-cublas-cu12           12.6.3.3                           python                   
-nvidia-cuda-nvrtc-cu12       12.6.77                            python                   
-nvidia-cudnn-cu12            8.9.7.29                           python                   
+nvidia-cudnn-cu12            9.5.1.17                           python                   
 onnxruntime                  1.19.2                             python                   
 openssl                      3.0.13-0ubuntu3.4                  deb                      
 packaging                    24.1                               python  (+1 duplicate)   
 passwd                       1:4.13+dfsg1-4ubuntu3.2            deb                      
 perl-base                    5.38.2-3.2build2                   deb                      
 pinentry-curses              1.2.1-3ubuntu5                     deb                      
-pip                          24.2                               python                   
+pip                          24.3.1                             python                   
 platformdirs                 4.2.2                              python                   
 procps                       2:4.0.4-4ubuntu3.2                 deb                      
 protobuf                     5.28.3                             python                   
@@ -182,14 +181,14 @@ readline-common              8.2-4build1                        deb
 requests                     2.32.3                             python                   
 sed                          4.9-2build1                        deb                      
 sensible-utils               0.0.22                             deb                      
-setuptools                   75.2.0                             python                   
+setuptools                   75.3.0                             python                   
 sympy                        1.13.3                             python                   
 systemd-standalone-sysusers  255.4-1ubuntu8.4                   deb                      
 sysvinit-utils               3.08-6ubuntu3                      deb                      
 tar                          1.35+dfsg-3build1                  deb                      
 tokenizers                   0.15.2                             python                   
 tomli                        2.0.1                              python                   
-tqdm                         4.66.5                             python                   
+tqdm                         4.66.6                             python                   
 typeguard                    4.3.0                              python                   
 typing-extensions            4.12.2                             python  (+1 duplicate)   
 tzdata                       2024a-3ubuntu1.1                   deb                      
