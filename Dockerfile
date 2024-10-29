@@ -28,6 +28,7 @@ RUN \
     pip \
     wheel && \
   pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/ubuntu/ \
+    ctranslate2==4.4.0 \
     nvidia-cublas-cu12 \
     nvidia-cudnn-cu12==8.9.7.29 \
     "wyoming-faster-whisper==${WHISPER_VERSION}" && \
