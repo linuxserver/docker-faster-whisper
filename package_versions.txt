@@ -45,7 +45,7 @@ gpgv                         2.4.4-2ubuntu17                    deb
 grep                         3.11-4build1                       deb                      
 gzip                         1.12-1ubuntu3                      deb                      
 hostname                     3.23+nmu2ubuntu2                   deb                      
-huggingface-hub              0.26.2                             python                   
+huggingface-hub              0.26.3                             python                   
 humanfriendly                10.0                               python                   
 idna                         3.10                               python                   
 importlib-metadata           8.0.0                              python                   
@@ -163,7 +163,7 @@ pinentry-curses              1.2.1-3ubuntu5                     deb
 pip                          24.3.1                             python                   
 platformdirs                 4.2.2                              python                   
 procps                       2:4.0.4-4ubuntu3.2                 deb                      
-protobuf                     5.28.3                             python                   
+protobuf                     5.29.0                             python                   
 publicsuffix                 20231001.0357-0.1                  deb                      
 python3                      3.12.3-0ubuntu2                    deb                      
 python3-minimal              3.12.3-0ubuntu2                    deb                      
@@ -185,7 +185,7 @@ sysvinit-utils               3.08-6ubuntu3                      deb
 tar                          1.35+dfsg-3build1                  deb                      
 tokenizers                   0.15.2                             python                   
 tomli                        2.0.1                              python                   
-tqdm                         4.67.0                             python                   
+tqdm                         4.67.1                             python                   
 typeguard                    4.3.0                              python                   
 typing-extensions            4.12.2                             python  (+1 duplicate)   
 tzdata                       2024a-3ubuntu1.1                   deb                      
