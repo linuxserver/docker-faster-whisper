@@ -73,7 +73,6 @@ When using the `gpu` tag with Nvidia GPUs, make sure you set the container to us
 
 For more information see the [faster-whisper docs](https://github.com/SYSTRAN/faster-whisper),
 
- 
 ## Read-Only Operation
 
 This image can be run with a read-only container filesystem. For details please [read the docs](https://docs.linuxserver.io/misc/read-only/).
@@ -81,6 +80,9 @@ This image can be run with a read-only container filesystem. For details please 
 ## Usage
 
 To help you get started creating a container from this image you can either use docker-compose or the docker cli.
+
+>[!NOTE]
+>Unless a parameter is flaged as 'optional', it is *mandatory* and a value must be provided.
 
 ### docker-compose (recommended, [click here for more info](https://docs.linuxserver.io/general/docker-compose))
 
@@ -98,7 +100,7 @@ services:
       - WHISPER_BEAM=1 #optional
       - WHISPER_LANG=en #optional
     volumes:
-      - /path/to/data:/config
+      - /path/to/faster-whisper/data:/config
     ports:
       - 10300:10300
     restart: unless-stopped
@@ -116,7 +118,7 @@ docker run -d \
   -e WHISPER_BEAM=1 `#optional` \
   -e WHISPER_LANG=en `#optional` \
   -p 10300:10300 \
-  -v /path/to/data:/config \
+  -v /path/to/faster-whisper/data:/config \
   --restart unless-stopped \
   lscr.io/linuxserver/faster-whisper:gpu
 ```
@@ -127,7 +129,7 @@ Containers are configured using parameters passed at runtime (such as those abov
 
 | Parameter | Function |
 | :----: | --- |
-| `-p 10300` | Wyoming connection port. |
+| `-p 10300:10300` | Wyoming connection port. |
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
@@ -299,6 +301,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **05.12.24:** - Build from Github releases rather than Pypi.
 * **18.07.24:** - Rebase to Ubuntu Noble.
 * **19.05.24:** - Bump CUDA to 12 on GPU branch.
 * **08.01.24:** - Add GPU branch.
