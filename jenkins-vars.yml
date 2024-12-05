@@ -6,6 +6,8 @@ external_type: github_stable
 release_type: stable
 release_tag: latest
 ls_branch: main
+image_sbom: true
+image_provenance: true
 repo_vars:
   - EXT_GIT_BRANCH = 'master'
   - EXT_USER = 'rhasspy'

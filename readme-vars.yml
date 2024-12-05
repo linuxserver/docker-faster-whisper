@@ -25,7 +25,7 @@ param_env_vars:
   - { env_var: "WHISPER_MODEL", env_value: "tiny-int8", desc: "Whisper model that will be used for transcription. From `tiny`, `base`, `small` and `medium`, all with `-int8` compressed variants", env_options: ["tiny-int8", "tiny", "base-int8", "base", "small-int8", "small", "medium-int8"] }
 param_usage_include_vols: true
 param_volumes:
-  - { vol_path: "/config", vol_host_path: "/path/to/data", desc: "Local path for Whisper config files." }
+  - { vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/data", desc: "Local path for Whisper config files." }
 param_usage_include_ports: true
 param_ports:
   - { external_port: "10300", internal_port: "10300", port_desc: "Wyoming connection port." }
