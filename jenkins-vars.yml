@@ -2,12 +2,14 @@
 
 # jenkins variables
 project_name: docker-faster-whisper
-external_type: pip_version
+external_type: github_stable
 release_type: stable
 release_tag: latest
 ls_branch: main
 repo_vars:
-  - EXT_PIP = 'wyoming-faster-whisper'
+  - EXT_GIT_BRANCH = 'master'
+  - EXT_USER = 'rhasspy'
+  - EXT_REPO = 'wyoming-faster-whisper'
   - BUILD_VERSION_ARG = 'WHISPER_VERSION'
   - LS_USER = 'linuxserver'
   - LS_REPO = 'docker-faster-whisper'

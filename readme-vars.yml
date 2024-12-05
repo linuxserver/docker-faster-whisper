@@ -49,6 +49,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "05.12.24:", desc: "Build from Github releases rather than Pypi." }
   - { date: "18.07.24:", desc: "Rebase to Ubuntu Noble." }
   - { date: "19.05.24:", desc: "Bump CUDA to 12 on GPU branch." }
   - { date: "08.01.24:", desc: "Add GPU branch." }
