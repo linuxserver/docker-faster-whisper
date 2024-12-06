@@ -6,38 +6,32 @@ project_url: "https://github.com/SYSTRAN/faster-whisper"
 project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/faster-whisper-logo.png"
 project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container provides a Wyoming protocol server for faster-whisper."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
-
 # supported architectures
 available_architectures:
-  - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
-
+  - {arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
 # development version
 development_versions: true
 development_versions_items:
-  - { tag: "latest", desc: "Stable releases" }
-  - { tag: "gpu", desc: "Releases with Nvidia GPU support" }
-
+  - {tag: "latest", desc: "Stable releases"}
+  - {tag: "gpu", desc: "Releases with Nvidia GPU support"}
 # container parameters
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
 param_usage_include_env: true
 param_env_vars:
-  - { env_var: "WHISPER_MODEL", env_value: "tiny-int8", desc: "Whisper model that will be used for transcription. From `tiny`, `base`, `small` and `medium`, all with `-int8` compressed variants", env_options: ["tiny-int8", "tiny", "base-int8", "base", "small-int8", "small", "medium-int8"] }
+  - {env_var: "WHISPER_MODEL", env_value: "tiny-int8", desc: "Whisper model that will be used for transcription. From `tiny`, `base`, `small` and `medium`, all with `-int8` compressed variants", env_options: ["tiny-int8", "tiny", "base-int8", "base", "small-int8", "small", "medium-int8"]}
 param_usage_include_vols: true
 param_volumes:
-  - { vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/data", desc: "Local path for Whisper config files." }
+  - {vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/data", desc: "Local path for Whisper config files."}
 param_usage_include_ports: true
 param_ports:
-  - { external_port: "10300", internal_port: "10300", port_desc: "Wyoming connection port." }
-
+  - {external_port: "10300", internal_port: "10300", port_desc: "Wyoming connection port."}
 # optional container parameters
 opt_param_usage_include_env: true
 opt_param_env_vars:
-  - { env_var: "WHISPER_BEAM", env_value: "1", desc: "Number of candidates to consider simultaneously during transcription." }
-  - { env_var: "WHISPER_LANG", env_value: "en", desc: "Language that you will speak to the add-on." }
-
+  - {env_var: "WHISPER_BEAM", env_value: "1", desc: "Number of candidates to consider simultaneously during transcription."}
+  - {env_var: "WHISPER_LANG", env_value: "en", desc: "Language that you will speak to the add-on."}
 readonly_supported: true
-
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
@@ -46,11 +40,49 @@ app_setup_block: |
   When using the `gpu` tag with Nvidia GPUs, make sure you set the container to use the `nvidia` runtime and that you have the [Nvidia Container Toolkit](https://github.com/NVIDIA/nvidia-container-toolkit) installed on the host and that you run the container with the correct GPU(s) exposed. See the [Nvidia Container Toolkit docs](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/sample-workload.html) for more details.
 
   For more information see the [faster-whisper docs](https://github.com/SYSTRAN/faster-whisper),
-
+# init diagram
+init_diagram: |
+  "faster-whisper:gpu": {
+    docker-mods
+    base {
+      fix-attr +\nlegacy cont-init
+    }
+    docker-mods -> base
+    legacy-services
+    custom services
+    init-services -> legacy-services
+    init-services -> custom services
+    custom services -> legacy-services
+    legacy-services -> ci-service-check
+    init-migrations -> init-adduser
+    init-os-end -> init-config
+    init-config -> init-config-end
+    init-crontab-config -> init-config-end
+    init-whisper-config -> init-config-end
+    init-config -> init-crontab-config
+    init-mods-end -> init-custom-files
+    base -> init-envfile
+    base -> init-migrations
+    init-config-end -> init-mods
+    init-mods-package-install -> init-mods-end
+    init-mods -> init-mods-package-install
+    init-adduser -> init-os-end
+    init-envfile -> init-os-end
+    init-custom-files -> init-services
+    init-config -> init-whisper-config
+    init-services -> svc-cron
+    svc-cron -> legacy-services
+    init-services -> svc-whisper
+    svc-whisper -> legacy-services
+  }
+  Base Images: {
+    "baseimage-ubuntu:noble"
+  }
+  "faster-whisper:gpu" <- Base Images
 # changelog
 changelogs:
-  - { date: "05.12.24:", desc: "Build from Github releases rather than Pypi." }
-  - { date: "18.07.24:", desc: "Rebase to Ubuntu Noble." }
-  - { date: "19.05.24:", desc: "Bump CUDA to 12 on GPU branch." }
-  - { date: "08.01.24:", desc: "Add GPU branch." }
-  - { date: "25.11.23:", desc: "Initial Release." }
+  - {date: "05.12.24:", desc: "Build from Github releases rather than Pypi."}
+  - {date: "18.07.24:", desc: "Rebase to Ubuntu Noble."}
+  - {date: "19.05.24:", desc: "Bump CUDA to 12 on GPU branch."}
+  - {date: "08.01.24:", desc: "Add GPU branch."}
+  - {date: "25.11.23:", desc: "Initial Release."}
