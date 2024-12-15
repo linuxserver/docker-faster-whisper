@@ -612,7 +612,9 @@ pipeline {
                       for i in "${CACHE[@]}"; do
                         docker push ${i}:amd64-${COMMIT_SHA}-${BUILD_NUMBER} &
                       done
-                      wait
+                      for p in $(jobs -p); do
+                        wait "$p" || { echo "job $p failed" >&2; exit 1; }
+                      done
                     fi
                 '''
           }
@@ -676,7 +678,9 @@ pipeline {
                           for i in "${CACHE[@]}"; do
                             docker push ${i}:amd64-${COMMIT_SHA}-${BUILD_NUMBER} &
                           done
-                          wait
+                          for p in $(jobs -p); do
+                            wait "$p" || { echo "job $p failed" >&2; exit 1; }
+                          done
                         fi
                     '''
               }
@@ -733,7 +737,9 @@ pipeline {
                           for i in "${CACHE[@]}"; do
                             docker push ${i}:arm64v8-${COMMIT_SHA}-${BUILD_NUMBER} &
                           done
-                          wait
+                          for p in $(jobs -p); do
+                            wait "$p" || { echo "job $p failed" >&2; exit 1; }
+                          done
                         fi
                     '''
               }
@@ -976,7 +982,7 @@ pipeline {
               echo '{"tag_name":"'${META_TAG}'",\
                      "target_commitish": "gpu",\
                      "name": "'${META_TAG}'",\
-                     "body": "**CI Report:**\\n\\n'${CI_URL:-N/A}'\\n\\n**LinuxServer Changes:**\\n\\n'${LS_RELEASE_NOTES}'\\n\\n**'${EXT_REPO}' Changes:**\\n\\n' > start
+                     "body": "**CI Report:**\\n\\n'${CI_URL:-N/A}'\\n\\n**LinuxServer Changes:**\\n\\n'${LS_RELEASE_NOTES}'\\n\\n**Remote Changes:**\\n\\n' > start
               printf '","draft": false,"prerelease": true}' >> releasebody.json
               paste -d'\\0' start releasebody.json > releasebody.json.done
               curl -H "Authorization: token ${GITHUB_TOKEN}" -X POST https://api.github.com/repos/${LS_USER}/${LS_REPO}/releases -d @releasebody.json.done'''
