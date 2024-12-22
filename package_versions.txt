@@ -19,7 +19,7 @@ coreutils                    9.4-3ubuntu6                       deb
 cron                         3.0pl1-184ubuntu2                  deb                      
 cron-daemon-common           3.0pl1-184ubuntu2                  deb                      
 ctranslate2                  4.5.0                              python                   
-curl                         8.5.0-2ubuntu10.5                  deb                      
+curl                         8.5.0-2ubuntu10.6                  deb                      
 dash                         0.5.12-6ubuntu5                    deb                      
 debconf                      1.5.86ubuntu1                      deb                      
 debianutils                  5.17build1                         deb                      
@@ -31,7 +31,7 @@ faster-whisper               1.1.0                              python
 filelock                     3.16.1                             python                   
 findutils                    4.9.0-5build1                      deb                      
 flatbuffers                  24.3.25                            python                   
-fsspec                       2024.10.0                          python                   
+fsspec                       2024.12.0                          python                   
 gcc-14-base                  14.2.0-4ubuntu2~24.04              deb                      
 gnupg                        2.4.4-2ubuntu17                    deb                      
 gnupg-l10n                   2.4.4-2ubuntu17                    deb                      
@@ -45,7 +45,7 @@ gpgv                         2.4.4-2ubuntu17                    deb
 grep                         3.11-4build1                       deb                      
 gzip                         1.12-1ubuntu3                      deb                      
 hostname                     3.23+nmu2ubuntu2                   deb                      
-huggingface-hub              0.26.5                             python                   
+huggingface-hub              0.27.0                             python                   
 humanfriendly                10.0                               python                   
 idna                         3.10                               python                   
 importlib-metadata           8.0.0                              python                   
@@ -74,7 +74,7 @@ libcap-ng0                   0.8.4-2build2                      deb
 libcap2                      1:2.66-5ubuntu2                    deb                      
 libcom-err2                  1.47.0-2.4~exp1ubuntu4.1           deb                      
 libcrypt1                    1:4.4.36-4build1                   deb                      
-libcurl4t64                  8.5.0-2ubuntu10.5                  deb                      
+libcurl4t64                  8.5.0-2ubuntu10.6                  deb                      
 libdb5.3t64                  5.3.28+dfsg2-7                     deb                      
 libdebconfclient0            0.271ubuntu3                       deb                      
 libexpat1                    2.6.1-2ubuntu0.2                   deb                      
@@ -153,7 +153,7 @@ ncurses-base                 6.4+20240113-1ubuntu2              deb
 ncurses-bin                  6.4+20240113-1ubuntu2              deb                      
 netbase                      6.4                                deb                      
 netcat-openbsd               1.226-1ubuntu2                     deb                      
-numpy                        2.2.0                              python                   
+numpy                        2.2.1                              python                   
 onnxruntime                  1.20.1                             python                   
 openssl                      3.0.13-0ubuntu3.4                  deb                      
 packaging                    24.2                               python  (+1 duplicate)   
@@ -163,7 +163,7 @@ pinentry-curses              1.2.1-3ubuntu5                     deb
 pip                          24.3.1                             python                   
 platformdirs                 4.2.2                              python                   
 procps                       2:4.0.4-4ubuntu3.2                 deb                      
-protobuf                     5.29.1                             python                   
+protobuf                     5.29.2                             python                   
 publicsuffix                 20231001.0357-0.1                  deb                      
 python3                      3.12.3-0ubuntu2                    deb                      
 python3-minimal              3.12.3-0ubuntu2                    deb                      
