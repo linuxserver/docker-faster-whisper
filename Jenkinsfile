@@ -30,7 +30,7 @@ pipeline {
     DEV_DOCKERHUB_IMAGE = 'lsiodev/faster-whisper'
     PR_DOCKERHUB_IMAGE = 'lspipepr/faster-whisper'
     DIST_IMAGE = 'ubuntu'
-    MULTIARCH='false'
+    MULTIARCH='true'
     CI='true'
     CI_WEB='false'
     CI_DELAY='120'

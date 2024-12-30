@@ -9,17 +9,18 @@ project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_
 # supported architectures
 available_architectures:
   - {arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
+  - {arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
 # development version
 development_versions: true
 development_versions_items:
   - {tag: "latest", desc: "Stable releases"}
-  - {tag: "gpu", desc: "Releases with Nvidia GPU support"}
+  - {tag: "gpu", desc: "Releases with Nvidia GPU support (amd64 only)"}
 # container parameters
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
 param_usage_include_env: true
 param_env_vars:
-  - {env_var: "WHISPER_MODEL", env_value: "tiny-int8", desc: "Whisper model that will be used for transcription. From `tiny`, `base`, `small` and `medium`, all with `-int8` compressed variants", env_options: ["tiny-int8", "tiny", "base-int8", "base", "small-int8", "small", "medium-int8"]}
+  - {env_var: "WHISPER_MODEL", env_value: "tiny-int8", desc: "Whisper model that will be used for transcription. From [here](https://github.com/SYSTRAN/faster-whisper/blob/master/faster_whisper/utils.py#L12-L31), all with `-int8` compressed variants"}
 param_usage_include_vols: true
 param_volumes:
   - {vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/data", desc: "Local path for Whisper config files."}
@@ -81,6 +82,7 @@ init_diagram: |
   "faster-whisper:latest" <- Base Images
 # changelog
 changelogs:
+  - {date: "30.12.24:", desc: "Add arm64 support for non-GPU builds."}
   - {date: "05.12.24:", desc: "Build from Github releases rather than Pypi."}
   - {date: "18.07.24:", desc: "Rebase to Ubuntu Noble."}
   - {date: "19.05.24:", desc: "Bump CUDA to 12 on GPU branch."}

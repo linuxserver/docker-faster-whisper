@@ -54,7 +54,7 @@ The architectures supported by this image are:
 | Architecture | Available | Tag |
 | :----: | :----: | ---- |
 | x86-64 | ✅ | amd64-\<version tag\> |
-| arm64 | ❌ | |
+| arm64 | ✅ | arm64v8-\<version tag\> |
 | armhf | ❌ | |
 
 ## Version Tags
@@ -64,7 +64,7 @@ This image provides various versions that are available via tags. Please read th
 | Tag | Available | Description |
 | :----: | :----: |--- |
 | latest | ✅ | Stable releases |
-| gpu | ✅ | Releases with Nvidia GPU support |
+| gpu | ✅ | Releases with Nvidia GPU support (amd64 only) |
 
 ## Application Setup
 
@@ -134,7 +134,7 @@ Containers are configured using parameters passed at runtime (such as those abov
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
-| `-e WHISPER_MODEL=tiny-int8` | Whisper model that will be used for transcription. From `tiny`, `base`, `small` and `medium`, all with `-int8` compressed variants |
+| `-e WHISPER_MODEL=tiny-int8` | Whisper model that will be used for transcription. From [here](https://github.com/SYSTRAN/faster-whisper/blob/master/faster_whisper/utils.py#L12-L31), all with `-int8` compressed variants |
 | `-e WHISPER_BEAM=1` | Number of candidates to consider simultaneously during transcription. |
 | `-e WHISPER_LANG=en` | Language that you will speak to the add-on. |
 | `-v /config` | Local path for Whisper config files. |
@@ -302,6 +302,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **30.12.24:** - Add arm64 support for non-GPU builds.
 * **05.12.24:** - Build from Github releases rather than Pypi.
 * **18.07.24:** - Rebase to Ubuntu Noble.
 * **19.05.24:** - Bump CUDA to 12 on GPU branch.
