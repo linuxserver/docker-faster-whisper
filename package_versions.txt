@@ -153,7 +153,7 @@ ncurses-base                 6.4+20240113-1ubuntu2              deb
 ncurses-bin                  6.4+20240113-1ubuntu2              deb                      
 netbase                      6.4                                deb                      
 netcat-openbsd               1.226-1ubuntu2                     deb                      
-numpy                        2.2.1                              python                   
+numpy                        2.2.2                              python                   
 onnxruntime                  1.20.1                             python                   
 openssl                      3.0.13-0ubuntu3.4                  deb                      
 packaging                    24.2                               python  (+1 duplicate)   
