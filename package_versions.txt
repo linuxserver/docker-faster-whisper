@@ -4,7 +4,7 @@ adduser                      3.137ubuntu1                       deb
 apt                          2.7.14build2                       deb                      
 apt-utils                    2.7.14build2                       deb                      
 autocommand                  2.2.2                              python                   
-av                           14.0.1                             python                   
+av                           14.1.0                             python                   
 backports-tarfile            1.2.0                              python                   
 base-files                   13ubuntu10.1                       deb                      
 base-passwd                  3.6.3build1                        deb                      
@@ -28,9 +28,9 @@ dirmngr                      2.4.4-2ubuntu17                    deb
 dpkg                         1.22.6ubuntu6.1                    deb                      
 e2fsprogs                    1.47.0-2.4~exp1ubuntu4.1           deb                      
 faster-whisper               1.1.0                              python                   
-filelock                     3.16.1                             python                   
+filelock                     3.17.0                             python                   
 findutils                    4.9.0-5build1                      deb                      
-flatbuffers                  24.12.23                           python                   
+flatbuffers                  25.1.24                            python                   
 fsspec                       2024.12.0                          python                   
 gcc-14-base                  14.2.0-4ubuntu2~24.04              deb                      
 gnupg                        2.4.4-2ubuntu17                    deb                      
@@ -114,8 +114,8 @@ libpcre2-8-0                 10.42-4ubuntu2                     deb
 libproc2-0                   2:4.0.4-4ubuntu3.2                 deb                      
 libpsl5t64                   0.21.2-1.1build1                   deb                      
 libpython3-stdlib            3.12.3-0ubuntu2                    deb                      
-libpython3.12-minimal        3.12.3-1ubuntu0.3                  deb                      
-libpython3.12-stdlib         3.12.3-1ubuntu0.3                  deb                      
+libpython3.12-minimal        3.12.3-1ubuntu0.4                  deb                      
+libpython3.12-stdlib         3.12.3-1ubuntu0.4                  deb                      
 libreadline8t64              8.2-4build1                        deb                      
 librtmp1                     2.4+20151223.gitfa8646d.1-2build7  deb                      
 libsasl2-2                   2.1.28+dfsg1-5ubuntu3.1            deb                      
@@ -154,8 +154,8 @@ ncurses-bin                  6.4+20240113-1ubuntu2              deb
 netbase                      6.4                                deb                      
 netcat-openbsd               1.226-1ubuntu2                     deb                      
 numpy                        2.2.2                              python                   
-nvidia-cublas-cu12           12.6.4.1                           python                   
-nvidia-cudnn-cu12            9.6.0.74                           python                   
+nvidia-cublas-cu12           12.8.3.14                          python                   
+nvidia-cudnn-cu12            9.7.0.66                           python                   
 onnxruntime                  1.20.1                             python                   
 openssl                      3.0.13-0ubuntu3.4                  deb                      
 packaging                    24.2                               python  (+1 duplicate)   
@@ -172,9 +172,9 @@ python3-minimal              3.12.3-0ubuntu2                    deb
 python3-pip-whl              24.0+dfsg-1ubuntu1.1               deb                      
 python3-setuptools-whl       68.1.2-2ubuntu1.1                  deb                      
 python3-venv                 3.12.3-0ubuntu2                    deb                      
-python3.12                   3.12.3-1ubuntu0.3                  deb                      
-python3.12-minimal           3.12.3-1ubuntu0.3                  deb                      
-python3.12-venv              3.12.3-1ubuntu0.3                  deb                      
+python3.12                   3.12.3-1ubuntu0.4                  deb                      
+python3.12-minimal           3.12.3-1ubuntu0.4                  deb                      
+python3.12-venv              3.12.3-1ubuntu0.4                  deb                      
 pyyaml                       6.0.2                              python                   
 readline-common              8.2-4build1                        deb                      
 requests                     2.32.3                             python                   
