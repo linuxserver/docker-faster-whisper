@@ -4,7 +4,7 @@ adduser                      3.137ubuntu1                       deb
 apt                          2.7.14build2                       deb                      
 apt-utils                    2.7.14build2                       deb                      
 autocommand                  2.2.2                              python                   
-av                           14.0.1                             python                   
+av                           14.1.0                             python                   
 backports-tarfile            1.2.0                              python                   
 base-files                   13ubuntu10.1                       deb                      
 base-passwd                  3.6.3build1                        deb                      
@@ -30,7 +30,7 @@ e2fsprogs                    1.47.0-2.4~exp1ubuntu4.1           deb
 faster-whisper               1.1.0                              python                   
 filelock                     3.17.0                             python                   
 findutils                    4.9.0-5build1                      deb                      
-flatbuffers                  25.1.21                            python                   
+flatbuffers                  25.1.24                            python                   
 fsspec                       2024.12.0                          python                   
 gcc-14-base                  14.2.0-4ubuntu2~24.04              deb                      
 gnupg                        2.4.4-2ubuntu17                    deb                      
