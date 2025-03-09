@@ -31,7 +31,7 @@ faster-whisper               1.1.0                              python
 filelock                     3.17.0                             python                   
 findutils                    4.9.0-5build1                      deb                      
 flatbuffers                  25.2.10                            python                   
-fsspec                       2025.2.0                           python                   
+fsspec                       2025.3.0                           python                   
 gcc-14-base                  14.2.0-4ubuntu2~24.04              deb                      
 gnupg                        2.4.4-2ubuntu17                    deb                      
 gnupg-l10n                   2.4.4-2ubuntu17                    deb                      
@@ -45,7 +45,7 @@ gpgv                         2.4.4-2ubuntu17                    deb
 grep                         3.11-4build1                       deb                      
 gzip                         1.12-1ubuntu3                      deb                      
 hostname                     3.23+nmu2ubuntu2                   deb                      
-huggingface-hub              0.29.1                             python                   
+huggingface-hub              0.29.2                             python                   
 humanfriendly                10.0                               python                   
 idna                         3.10                               python                   
 importlib-metadata           8.0.0                              python                   
@@ -57,7 +57,7 @@ jaraco-functools             4.0.1                              python
 jaraco-text                  3.12.1                             python                   
 jq                           1.7.1-3build1                      deb                      
 keyboxd                      2.4.4-2ubuntu17                    deb                      
-krb5-locales                 1.20.1-6ubuntu2.4                  deb                      
+krb5-locales                 1.20.1-6ubuntu2.5                  deb                      
 libacl1                      2.3.2-1build1.1                    deb                      
 libapt-pkg6.0t64             2.7.14build2                       deb                      
 libassuan0                   2.5.6-1build1                      deb                      
@@ -85,14 +85,14 @@ libgcrypt20                  1.10.3-2build1                     deb
 libgmp10                     2:6.3.0+dfsg-2ubuntu6.1            deb                      
 libgnutls30t64               3.8.3-1.1ubuntu3.3                 deb                      
 libgpg-error0                1.47-3build2.1                     deb                      
-libgssapi-krb5-2             1.20.1-6ubuntu2.4                  deb                      
+libgssapi-krb5-2             1.20.1-6ubuntu2.5                  deb                      
 libhogweed6t64               3.9.1-2.2build1.1                  deb                      
 libidn2-0                    2.3.7-2build1.1                    deb                      
 libjq1                       1.7.1-3build1                      deb                      
-libk5crypto3                 1.20.1-6ubuntu2.4                  deb                      
+libk5crypto3                 1.20.1-6ubuntu2.5                  deb                      
 libkeyutils1                 1.6.3-3build1                      deb                      
-libkrb5-3                    1.20.1-6ubuntu2.4                  deb                      
-libkrb5support0              1.20.1-6ubuntu2.4                  deb                      
+libkrb5-3                    1.20.1-6ubuntu2.5                  deb                      
+libkrb5support0              1.20.1-6ubuntu2.5                  deb                      
 libksba8                     1.6.6-1build1                      deb                      
 libldap-common               2.6.7+dfsg-1~exp1ubuntu8.2         deb                      
 libldap2                     2.6.7+dfsg-1~exp1ubuntu8.2         deb                      
@@ -154,9 +154,9 @@ ncurses-bin                  6.4+20240113-1ubuntu2              deb
 netbase                      6.4                                deb                      
 netcat-openbsd               1.226-1ubuntu2                     deb                      
 numpy                        2.2.3                              python                   
-nvidia-cublas-cu12           12.8.3.14                          python                   
-nvidia-cudnn-cu12            9.7.1.26                           python                   
-onnxruntime                  1.20.1                             python                   
+nvidia-cublas-cu12           12.8.4.1                           python                   
+nvidia-cudnn-cu12            9.8.0.87                           python                   
+onnxruntime                  1.21.0                             python                   
 openssl                      3.0.13-0ubuntu3.5                  deb                      
 packaging                    24.2                               python  (+1 duplicate)   
 passwd                       1:4.13+dfsg1-4ubuntu3.2            deb                      
@@ -165,7 +165,7 @@ pinentry-curses              1.2.1-3ubuntu5                     deb
 pip                          25.0.1                             python                   
 platformdirs                 4.2.2                              python                   
 procps                       2:4.0.4-4ubuntu3.2                 deb                      
-protobuf                     5.29.3                             python                   
+protobuf                     6.30.0                             python                   
 publicsuffix                 20231001.0357-0.1                  deb                      
 python3                      3.12.3-0ubuntu2                    deb                      
 python3-minimal              3.12.3-0ubuntu2                    deb                      
@@ -180,7 +180,7 @@ readline-common              8.2-4build1                        deb
 requests                     2.32.3                             python                   
 sed                          4.9-2build1                        deb                      
 sensible-utils               0.0.22                             deb                      
-setuptools                   75.8.2                             python                   
+setuptools                   75.9.1                             python                   
 sympy                        1.13.3                             python                   
 systemd-standalone-sysusers  255.4-1ubuntu8.5                   deb                      
 sysvinit-utils               3.08-6ubuntu3                      deb                      
