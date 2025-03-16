@@ -28,7 +28,7 @@ dirmngr                      2.4.4-2ubuntu17                    deb
 dpkg                         1.22.6ubuntu6.1                    deb                      
 e2fsprogs                    1.47.0-2.4~exp1ubuntu4.1           deb                      
 faster-whisper               1.1.0                              python                   
-filelock                     3.17.0                             python                   
+filelock                     3.18.0                             python                   
 findutils                    4.9.0-5build1                      deb                      
 flatbuffers                  25.2.10                            python                   
 fsspec                       2025.3.0                           python                   
@@ -45,7 +45,7 @@ gpgv                         2.4.4-2ubuntu17                    deb
 grep                         3.11-4build1                       deb                      
 gzip                         1.12-1ubuntu3                      deb                      
 hostname                     3.23+nmu2ubuntu2                   deb                      
-huggingface-hub              0.29.2                             python                   
+huggingface-hub              0.29.3                             python                   
 humanfriendly                10.0                               python                   
 idna                         3.10                               python                   
 importlib-metadata           8.0.0                              python                   
@@ -165,7 +165,7 @@ pinentry-curses              1.2.1-3ubuntu5                     deb
 pip                          25.0.1                             python                   
 platformdirs                 4.2.2                              python                   
 procps                       2:4.0.4-4ubuntu3.2                 deb                      
-protobuf                     6.30.0                             python                   
+protobuf                     6.30.1                             python                   
 publicsuffix                 20231001.0357-0.1                  deb                      
 python3                      3.12.3-0ubuntu2                    deb                      
 python3-minimal              3.12.3-0ubuntu2                    deb                      
@@ -180,12 +180,12 @@ readline-common              8.2-4build1                        deb
 requests                     2.32.3                             python                   
 sed                          4.9-2build1                        deb                      
 sensible-utils               0.0.22                             deb                      
-setuptools                   75.9.1                             python                   
+setuptools                   76.0.0                             python                   
 sympy                        1.13.3                             python                   
 systemd-standalone-sysusers  255.4-1ubuntu8.5                   deb                      
 sysvinit-utils               3.08-6ubuntu3                      deb                      
 tar                          1.35+dfsg-3build1                  deb                      
-tokenizers                   0.21.0                             python                   
+tokenizers                   0.21.1                             python                   
 tomli                        2.0.1                              python                   
 tqdm                         4.67.1                             python                   
 typeguard                    4.3.0                              python                   
