@@ -163,7 +163,7 @@ pinentry-curses              1.2.1-3ubuntu5                     deb
 pip                          25.0.1                             python                   
 platformdirs                 4.2.2                              python                   
 procps                       2:4.0.4-4ubuntu3.2                 deb                      
-protobuf                     6.30.1                             python                   
+protobuf                     6.30.2                             python                   
 publicsuffix                 20231001.0357-0.1                  deb                      
 python3                      3.12.3-0ubuntu2                    deb                      
 python3-minimal              3.12.3-0ubuntu2                    deb                      
@@ -178,7 +178,7 @@ readline-common              8.2-4build1                        deb
 requests                     2.32.3                             python                   
 sed                          4.9-2build1                        deb                      
 sensible-utils               0.0.22                             deb                      
-setuptools                   77.0.3                             python                   
+setuptools                   78.1.0                             python                   
 sympy                        1.13.3                             python                   
 systemd-standalone-sysusers  255.4-1ubuntu8.6                   deb                      
 sysvinit-utils               3.08-6ubuntu3                      deb                      
@@ -187,7 +187,8 @@ tokenizers                   0.21.1                             python
 tomli                        2.0.1                              python                   
 tqdm                         4.67.1                             python                   
 typeguard                    4.3.0                              python                   
-typing-extensions            4.12.2                             python  (+1 duplicate)   
+typing-extensions            4.12.2                             python                   
+typing-extensions            4.13.0                             python                   
 tzdata                       2024b-0ubuntu0.24.04.1             deb                      
 ubuntu-keyring               2023.11.28.1                       deb                      
 unminimize                   0.2.1                              deb                      
