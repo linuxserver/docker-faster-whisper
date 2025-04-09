@@ -100,6 +100,8 @@ services:
       - WHISPER_MODEL=tiny-int8
       - WHISPER_BEAM=1 #optional
       - WHISPER_LANG=en #optional
+      - WHISPER_INITIAL_PROMPT= #optional
+      - WHISPER_LOG_LEVEL=info #optional
     volumes:
       - /path/to/faster-whisper/data:/config
     ports:
@@ -118,6 +120,8 @@ docker run -d \
   -e WHISPER_MODEL=tiny-int8 \
   -e WHISPER_BEAM=1 `#optional` \
   -e WHISPER_LANG=en `#optional` \
+  -e WHISPER_INITIAL_PROMPT= `#optional` \
+  -e WHISPER_LOG_LEVEL=info `#optional` \
   -p 10300:10300 \
   -v /path/to/faster-whisper/data:/config \
   --restart unless-stopped \
