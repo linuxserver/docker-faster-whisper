@@ -152,12 +152,13 @@ ncurses-base                 6.4+20240113-1ubuntu2              deb
 ncurses-bin                  6.4+20240113-1ubuntu2              deb                     
 netbase                      6.4                                deb                     
 netcat-openbsd               1.226-1ubuntu2                     deb                     
-numpy                        2.2.4                              python                  
-onnxruntime                  1.21.0                             python                  
+numpy                        2.2.5                              python                  
+onnxruntime                  1.21.1                             python                  
 openssl                      3.0.13-0ubuntu3.5                  deb                     
-packaging                    24.2                               python  (+1 duplicate)  
+packaging                    24.2                               python                  
+packaging                    25.0                               python                  
 passwd                       1:4.13+dfsg1-4ubuntu3.2            deb                     
-perl-base                    5.38.2-3.2build2.1                 deb                     
+perl-base                    5.38.2-3.2ubuntu0.1                deb                     
 pinentry-curses              1.2.1-3ubuntu5                     deb                     
 pip                          25.0.1                             python                  
 platformdirs                 4.2.2                              python                  
@@ -177,7 +178,7 @@ readline-common              8.2-4build1                        deb
 requests                     2.32.3                             python                  
 sed                          4.9-2build1                        deb                     
 sensible-utils               0.0.22                             deb                     
-setuptools                   78.1.0                             python                  
+setuptools                   78.1.1                             python                  
 sympy                        1.13.3                             python                  
 systemd-standalone-sysusers  255.4-1ubuntu8.6                   deb                     
 sysvinit-utils               3.08-6ubuntu3                      deb                     
