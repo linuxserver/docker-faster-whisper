@@ -12,7 +12,7 @@ bsdutils                     1:2.39.3-9ubuntu6.2                deb
 ca-certificates              20240203                           deb                     
 catatonit                    0.1.7-1                            deb                     
 certifi                      2025.4.26                          python                  
-charset-normalizer           3.4.1                              python                  
+charset-normalizer           3.4.2                              python                  
 coloredlogs                  15.0.1                             python                  
 coreutils                    9.4-3ubuntu6                       deb                     
 cron                         3.0pl1-184ubuntu2                  deb                     
@@ -160,7 +160,7 @@ packaging                    25.0                               python
 passwd                       1:4.13+dfsg1-4ubuntu3.2            deb                     
 perl-base                    5.38.2-3.2ubuntu0.1                deb                     
 pinentry-curses              1.2.1-3ubuntu5                     deb                     
-pip                          25.1                               python                  
+pip                          25.1.1                             python                  
 platformdirs                 4.2.2                              python                  
 procps                       2:4.0.4-4ubuntu3.2                 deb                     
 protobuf                     6.30.2                             python                  
@@ -178,8 +178,8 @@ readline-common              8.2-4build1                        deb
 requests                     2.32.3                             python                  
 sed                          4.9-2build1                        deb                     
 sensible-utils               0.0.22                             deb                     
-setuptools                   79.0.1                             python                  
-sympy                        1.13.3                             python                  
+setuptools                   80.3.0                             python                  
+sympy                        1.14.0                             python                  
 systemd-standalone-sysusers  255.4-1ubuntu8.6                   deb                     
 sysvinit-utils               3.08-6ubuntu3                      deb                     
 tar                          1.35+dfsg-3build1                  deb                     
