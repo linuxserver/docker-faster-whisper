@@ -43,8 +43,9 @@ gpgsm                        2.4.4-2ubuntu17.2                  deb
 gpgv                         2.4.4-2ubuntu17.2                  deb                     
 grep                         3.11-4build1                       deb                     
 gzip                         1.12-1ubuntu3                      deb                     
+hf-xet                       1.1.0                              python                  
 hostname                     3.23+nmu2ubuntu2                   deb                     
-huggingface-hub              0.30.2                             python                  
+huggingface-hub              0.31.1                             python                  
 humanfriendly                10.0                               python                  
 idna                         3.10                               python                  
 importlib-metadata           8.0.0                              python                  
@@ -154,8 +155,8 @@ netbase                      6.4                                deb
 netcat-openbsd               1.226-1ubuntu2                     deb                     
 numpy                        2.2.5                              python                  
 nvidia-cublas-cu12           12.9.0.13                          python                  
-nvidia-cudnn-cu12            9.9.0.52                           python                  
-onnxruntime                  1.21.1                             python                  
+nvidia-cudnn-cu12            9.10.0.56                          python                  
+onnxruntime                  1.22.0                             python                  
 openssl                      3.0.13-0ubuntu3.5                  deb                     
 packaging                    24.2                               python                  
 packaging                    25.0                               python                  
@@ -180,7 +181,7 @@ readline-common              8.2-4build1                        deb
 requests                     2.32.3                             python                  
 sed                          4.9-2build1                        deb                     
 sensible-utils               0.0.22                             deb                     
-setuptools                   80.3.0                             python                  
+setuptools                   80.4.0                             python                  
 sympy                        1.14.0                             python                  
 systemd-standalone-sysusers  255.4-1ubuntu8.6                   deb                     
 sysvinit-utils               3.08-6ubuntu3                      deb                     
