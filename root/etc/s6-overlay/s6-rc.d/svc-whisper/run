@@ -1,7 +1,7 @@
 #!/command/with-contenv bash
 # shellcheck shell=bash
 
-export LD_LIBRARY_PATH=$(python3 -c 'import os; import nvidia.cublas.lib; import nvidia.cudnn.lib; print(os.path.dirname(nvidia.cublas.lib.__file__) + ":" + os.path.dirname(nvidia.cudnn.lib.__file__))')
+export LD_LIBRARY_PATH=$(python3 -c 'import os; import nvidia.cublas.lib; import nvidia.cudnn.lib; print(os.path.dirname(nvidia.cublas.lib.__path__[0]) + "/lib:" + os.path.dirname(nvidia.cudnn.lib.__path__[0]) + "/lib")')
 
 exec \
     s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z localhost 10300" \
