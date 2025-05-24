@@ -4,7 +4,7 @@
 project_name: faster-whisper
 project_url: "https://github.com/SYSTRAN/faster-whisper"
 project_logo: ""
-project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container provides a Wyoming protocol server for faster-whisper."
+project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container exposes an HTTP API for faster-whisper."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
 project_categories: "Machine Learning"
 # supported architectures
@@ -27,17 +27,18 @@ param_volumes:
   - {vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/data", desc: "Local path for Whisper config files."}
 param_usage_include_ports: true
 param_ports:
-  - {external_port: "10300", internal_port: "10300", port_desc: "Wyoming connection port."}
+  - {external_port: "8000", internal_port: "8000", port_desc: "HTTP API port."}
 # optional container parameters
 opt_param_usage_include_env: true
 opt_param_env_vars:
   - {env_var: "WHISPER_BEAM", env_value: "1", desc: "Number of candidates to consider simultaneously during transcription."}
   - {env_var: "WHISPER_LANG", env_value: "en", desc: "Language that you will speak to the add-on."}
+  - {env_var: "PORT", env_value: "8000", desc: "HTTP port to listen on."}
 readonly_supported: true
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
-  For use with Home Assistant [Assist](https://www.home-assistant.io/voice_control/voice_remote_local_assistant/), add the Wyoming integration and supply the hostname/IP and port that Whisper is running add-on."
+  For use with Home Assistant [Assist](https://www.home-assistant.io/voice_control/voice_remote_local_assistant/), send requests to the container's HTTP API. See [docs/new_protocol.md](docs/new_protocol.md) for available endpoints. The service listens on the port specified by the `PORT` environment variable (default `8000`).
 
   When using the `gpu` tag with Nvidia GPUs, make sure you set the container to use the `nvidia` runtime and that you have the [Nvidia Container Toolkit](https://github.com/NVIDIA/nvidia-container-toolkit) installed on the host and that you run the container with the correct GPU(s) exposed. See the [Nvidia Container Toolkit docs](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/sample-workload.html) for more details.
 
