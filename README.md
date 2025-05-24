@@ -39,7 +39,7 @@ Find us at:
 [![Jenkins Build](https://img.shields.io/jenkins/build?labelColor=555555&logoColor=ffffff&style=for-the-badge&jobUrl=https%3A%2F%2Fci.linuxserver.io%2Fjob%2FDocker-Pipeline-Builders%2Fjob%2Fdocker-faster-whisper%2Fjob%2Fmain%2F&logo=jenkins)](https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-faster-whisper/job/main/)
 [![LSIO CI](https://img.shields.io/badge/dynamic/yaml?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Fci-tests.linuxserver.io%2Flinuxserver%2Ffaster-whisper%2Flatest%2Fci-status.yml)](https://ci-tests.linuxserver.io/linuxserver/faster-whisper/latest/index.html)
 
-[Faster-whisper](https://github.com/SYSTRAN/faster-whisper) is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container provides a Wyoming protocol server for faster-whisper.
+[Faster-whisper](https://github.com/SYSTRAN/faster-whisper) is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container exposes an HTTP API for faster-whisper. See [docs/new_protocol.md](docs/new_protocol.md) for details.
 
 [![faster-whisper]()](https://github.com/SYSTRAN/faster-whisper)
 
@@ -68,7 +68,7 @@ This image provides various versions that are available via tags. Please read th
 
 ## Application Setup
 
-For use with Home Assistant [Assist](https://www.home-assistant.io/voice_control/voice_remote_local_assistant/), add the Wyoming integration and supply the hostname/IP and port that Whisper is running add-on."
+For use with Home Assistant [Assist](https://www.home-assistant.io/voice_control/voice_remote_local_assistant/), send requests to the container's HTTP API as described in [docs/new_protocol.md](docs/new_protocol.md). The service listens on the port defined by the `PORT` environment variable (default `8000`).
 
 When using the `gpu` tag with Nvidia GPUs, make sure you set the container to use the `nvidia` runtime and that you have the [Nvidia Container Toolkit](https://github.com/NVIDIA/nvidia-container-toolkit) installed on the host and that you run the container with the correct GPU(s) exposed. See the [Nvidia Container Toolkit docs](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/sample-workload.html) for more details.
 
@@ -100,10 +100,11 @@ services:
       - WHISPER_MODEL=tiny-int8
       - WHISPER_BEAM=1 #optional
       - WHISPER_LANG=en #optional
+      - PORT=8000 #optional
     volumes:
       - /path/to/faster-whisper/data:/config
     ports:
-      - 10300:10300
+      - 8000:8000
     restart: unless-stopped
 ```
 
@@ -118,7 +119,8 @@ docker run -d \
   -e WHISPER_MODEL=tiny-int8 \
   -e WHISPER_BEAM=1 `#optional` \
   -e WHISPER_LANG=en `#optional` \
-  -p 10300:10300 \
+  -e PORT=8000 `#optional` \
+  -p 8000:8000 \
   -v /path/to/faster-whisper/data:/config \
   --restart unless-stopped \
   lscr.io/linuxserver/faster-whisper:latest
@@ -130,13 +132,14 @@ Containers are configured using parameters passed at runtime (such as those abov
 
 | Parameter | Function |
 | :----: | --- |
-| `-p 10300:10300` | Wyoming connection port. |
+| `-p 8000:8000` | HTTP API port. |
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
 | `-e WHISPER_MODEL=tiny-int8` | Whisper model that will be used for transcription. From [here](https://github.com/SYSTRAN/faster-whisper/blob/master/faster_whisper/utils.py#L12-L31), all with `-int8` compressed variants |
 | `-e WHISPER_BEAM=1` | Number of candidates to consider simultaneously during transcription. |
 | `-e WHISPER_LANG=en` | Language that you will speak to the add-on. |
+| `-e PORT=8000` | HTTP port to listen on. |
 | `-v /config` | Local path for Whisper config files. |
 | `--read-only=true` | Run container with a read-only filesystem. Please [read the docs](https://docs.linuxserver.io/misc/read-only/). |
 
