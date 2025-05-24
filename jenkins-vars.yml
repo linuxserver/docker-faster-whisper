@@ -8,8 +8,8 @@ release_tag: latest
 ls_branch: main
 repo_vars:
   - EXT_GIT_BRANCH = 'master'
-  - EXT_USER = 'rhasspy'
-  - EXT_REPO = 'wyoming-faster-whisper'
+  - EXT_USER = 'the-horizon-dev'
+  - EXT_REPO = 'faster-whisper'
   - BUILD_VERSION_ARG = 'WHISPER_VERSION'
   - LS_USER = 'linuxserver'
   - LS_REPO = 'docker-faster-whisper'
