@@ -100,6 +100,7 @@ services:
       - WHISPER_MODEL=tiny-int8
       - WHISPER_BEAM=1 #optional
       - WHISPER_LANG=en #optional
+      - PORT=8000 #optional
     volumes:
       - /path/to/faster-whisper/data:/config
     ports:
@@ -118,7 +119,7 @@ docker run -d \
   -e WHISPER_MODEL=tiny-int8 \
   -e WHISPER_BEAM=1 `#optional` \
   -e WHISPER_LANG=en `#optional` \
-  -p 8000:8000 \
+  -e PORT=8000 `#optional` \
   -v /path/to/faster-whisper/data:/config \
   --restart unless-stopped \
   lscr.io/linuxserver/faster-whisper:latest
@@ -137,6 +138,7 @@ Containers are configured using parameters passed at runtime (such as those abov
 | `-e WHISPER_MODEL=tiny-int8` | Whisper model that will be used for transcription. From [here](https://github.com/SYSTRAN/faster-whisper/blob/master/faster_whisper/utils.py#L12-L31), all with `-int8` compressed variants |
 | `-e WHISPER_BEAM=1` | Number of candidates to consider simultaneously during transcription. |
 | `-e WHISPER_LANG=en` | Language that you will speak to the add-on. |
+| `-e PORT=8000` | HTTP port to listen on. |
 | `-v /config` | Local path for Whisper config files. |
 | `--read-only=true` | Run container with a read-only filesystem. Please [read the docs](https://docs.linuxserver.io/misc/read-only/). |
 
