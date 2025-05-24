@@ -20,8 +20,8 @@ pipeline {
     QUAYIO_API_TOKEN=credentials('quayio-repo-api-token')
     GIT_SIGNING_KEY=credentials('484fbca6-9a4f-455e-b9e3-97ac98785f5f')
     EXT_GIT_BRANCH = 'master'
-    EXT_USER = 'rhasspy'
-    EXT_REPO = 'wyoming-faster-whisper'
+    EXT_USER = 'the-horizon-dev'
+    EXT_REPO = 'faster-whisper'
     BUILD_VERSION_ARG = 'WHISPER_VERSION'
     LS_USER = 'linuxserver'
     LS_REPO = 'docker-faster-whisper'
@@ -593,7 +593,7 @@ pipeline {
           --label \"org.opencontainers.image.licenses=GPL-3.0-only\" \
           --label \"org.opencontainers.image.ref.name=${COMMIT_SHA}\" \
           --label \"org.opencontainers.image.title=Faster-whisper\" \
-          --label \"org.opencontainers.image.description=[Faster-whisper](https://github.com/SYSTRAN/faster-whisper) is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container provides a Wyoming protocol server for faster-whisper.\" \
+          --label \"org.opencontainers.image.description=[Faster-whisper](https://github.com/SYSTRAN/faster-whisper) is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container provides an HTTP API server for faster-whisper.\" \
           --no-cache --pull -t ${IMAGE}:${META_TAG} --platform=linux/amd64 \
           --provenance=true --sbom=true --builder=container --load \
           --build-arg ${BUILD_VERSION_ARG}=${EXT_RELEASE} --build-arg VERSION=\"${VERSION_TAG}\" --build-arg BUILD_DATE=${GITHUB_DATE} ."
@@ -659,7 +659,7 @@ pipeline {
               --label \"org.opencontainers.image.licenses=GPL-3.0-only\" \
               --label \"org.opencontainers.image.ref.name=${COMMIT_SHA}\" \
               --label \"org.opencontainers.image.title=Faster-whisper\" \
-              --label \"org.opencontainers.image.description=[Faster-whisper](https://github.com/SYSTRAN/faster-whisper) is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container provides a Wyoming protocol server for faster-whisper.\" \
+              --label \"org.opencontainers.image.description=[Faster-whisper](https://github.com/SYSTRAN/faster-whisper) is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container provides an HTTP API server for faster-whisper.\" \
               --no-cache --pull -t ${IMAGE}:amd64-${META_TAG} --platform=linux/amd64 \
               --provenance=true --sbom=true --builder=container --load \
               --build-arg ${BUILD_VERSION_ARG}=${EXT_RELEASE} --build-arg VERSION=\"${VERSION_TAG}\" --build-arg BUILD_DATE=${GITHUB_DATE} ."
@@ -718,7 +718,7 @@ pipeline {
               --label \"org.opencontainers.image.licenses=GPL-3.0-only\" \
               --label \"org.opencontainers.image.ref.name=${COMMIT_SHA}\" \
               --label \"org.opencontainers.image.title=Faster-whisper\" \
-              --label \"org.opencontainers.image.description=[Faster-whisper](https://github.com/SYSTRAN/faster-whisper) is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container provides a Wyoming protocol server for faster-whisper.\" \
+              --label \"org.opencontainers.image.description=[Faster-whisper](https://github.com/SYSTRAN/faster-whisper) is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container provides an HTTP API server for faster-whisper.\" \
               --no-cache --pull -f Dockerfile.aarch64 -t ${IMAGE}:arm64v8-${META_TAG} --platform=linux/arm64 \
               --provenance=true --sbom=true --builder=container --load \
               --build-arg ${BUILD_VERSION_ARG}=${EXT_RELEASE} --build-arg VERSION=\"${VERSION_TAG}\" --build-arg BUILD_DATE=${GITHUB_DATE} ."

@@ -4,7 +4,7 @@
 project_name: faster-whisper
 project_url: "https://github.com/SYSTRAN/faster-whisper"
 project_logo: ""
-project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container exposes an HTTP API for faster-whisper."
+project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container provides an HTTP API server for faster-whisper."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
 project_categories: "Machine Learning"
 # supported architectures
@@ -38,8 +38,8 @@ readonly_supported: true
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
-  For use with Home Assistant [Assist](https://www.home-assistant.io/voice_control/voice_remote_local_assistant/), send requests to the container's HTTP API. See [docs/new_protocol.md](docs/new_protocol.md) for available endpoints. The service listens on the port specified by the `PORT` environment variable (default `8000`).
-
+  Interact with the server using its HTTP API on the configured port (default `8000`). Upload WAV files to `/transcriptions` or `/translations`.
+  
   When using the `gpu` tag with Nvidia GPUs, make sure you set the container to use the `nvidia` runtime and that you have the [Nvidia Container Toolkit](https://github.com/NVIDIA/nvidia-container-toolkit) installed on the host and that you run the container with the correct GPU(s) exposed. See the [Nvidia Container Toolkit docs](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/sample-workload.html) for more details.
 
   For more information see the [faster-whisper docs](https://github.com/SYSTRAN/faster-whisper),
@@ -87,6 +87,7 @@ init_diagram: |
 # changelog
 changelogs:
   - {date: "30.12.24:", desc: "Add arm64 support for non-GPU builds."}
+  - {date: "24.05.25:", desc: "Install faster-whisper directly from Git."}
   - {date: "05.12.24:", desc: "Build from Github releases rather than Pypi."}
   - {date: "18.07.24:", desc: "Rebase to Ubuntu Noble."}
   - {date: "19.05.24:", desc: "Bump CUDA to 12 on GPU branch."}

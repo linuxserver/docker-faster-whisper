@@ -39,7 +39,7 @@ Find us at:
 [![Jenkins Build](https://img.shields.io/jenkins/build?labelColor=555555&logoColor=ffffff&style=for-the-badge&jobUrl=https%3A%2F%2Fci.linuxserver.io%2Fjob%2FDocker-Pipeline-Builders%2Fjob%2Fdocker-faster-whisper%2Fjob%2Fmain%2F&logo=jenkins)](https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-faster-whisper/job/main/)
 [![LSIO CI](https://img.shields.io/badge/dynamic/yaml?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Fci-tests.linuxserver.io%2Flinuxserver%2Ffaster-whisper%2Flatest%2Fci-status.yml)](https://ci-tests.linuxserver.io/linuxserver/faster-whisper/latest/index.html)
 
-[Faster-whisper](https://github.com/SYSTRAN/faster-whisper) is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container exposes an HTTP API for faster-whisper. See [docs/new_protocol.md](docs/new_protocol.md) for details.
+[Faster-whisper](https://github.com/SYSTRAN/faster-whisper) is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container provides an HTTP API server for faster-whisper.
 
 [![faster-whisper]()](https://github.com/SYSTRAN/faster-whisper)
 
@@ -68,7 +68,7 @@ This image provides various versions that are available via tags. Please read th
 
 ## Application Setup
 
-For use with Home Assistant [Assist](https://www.home-assistant.io/voice_control/voice_remote_local_assistant/), send requests to the container's HTTP API as described in [docs/new_protocol.md](docs/new_protocol.md). The service listens on the port defined by the `PORT` environment variable (default `8000`).
+Interact with the service using the HTTP endpoints described in the documentation. Upload WAV files to `/transcriptions` or `/translations` on the configured port (default `8000`).
 
 When using the `gpu` tag with Nvidia GPUs, make sure you set the container to use the `nvidia` runtime and that you have the [Nvidia Container Toolkit](https://github.com/NVIDIA/nvidia-container-toolkit) installed on the host and that you run the container with the correct GPU(s) exposed. See the [Nvidia Container Toolkit docs](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/sample-workload.html) for more details.
 
@@ -120,7 +120,6 @@ docker run -d \
   -e WHISPER_BEAM=1 `#optional` \
   -e WHISPER_LANG=en `#optional` \
   -e PORT=8000 `#optional` \
-  -p 8000:8000 \
   -v /path/to/faster-whisper/data:/config \
   --restart unless-stopped \
   lscr.io/linuxserver/faster-whisper:latest
@@ -306,6 +305,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 ## Versions
 
 * **30.12.24:** - Add arm64 support for non-GPU builds.
+* **24.05.25:** - Install faster-whisper directly from Git.
 * **05.12.24:** - Build from Github releases rather than Pypi.
 * **18.07.24:** - Rebase to Ubuntu Noble.
 * **19.05.24:** - Bump CUDA to 12 on GPU branch.
