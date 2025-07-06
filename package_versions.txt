@@ -4,7 +4,7 @@ adduser                      3.137ubuntu1                       deb
 apt                          2.8.3                              deb                      
 apt-utils                    2.8.3                              deb                      
 autocommand                  2.2.2                              python                   
-av                           14.4.0                             python                   
+av                           15.0.0                             python                   
 backports-tarfile            1.2.0                              python                   
 base-files                   13ubuntu10.2                       deb                      
 base-passwd                  3.6.3build1                        deb                      
@@ -54,7 +54,7 @@ gui-arm64                    UNKNOWN                            binary
 gzip                         1.12-1ubuntu3                      deb                      
 hf-xet                       1.1.5                              python                   
 hostname                     3.23+nmu2ubuntu2                   deb                      
-huggingface-hub              0.33.1                             python                   
+huggingface-hub              0.33.2                             python                   
 humanfriendly                10.0                               python                   
 idna                         3.10                               python                   
 importlib-metadata           8.0.0                              python                   
@@ -198,7 +198,7 @@ tomli                        2.0.1                              python
 tqdm                         4.67.1                             python                   
 typeguard                    4.3.0                              python                   
 typing-extensions            4.12.2                             python                   
-typing-extensions            4.14.0                             python                   
+typing-extensions            4.14.1                             python                   
 tzdata                       2025b-0ubuntu0.24.04.1             deb                      
 ubuntu-keyring               2023.11.28.1                       deb                      
 unminimize                   0.2.1                              deb                      
