@@ -6,8 +6,6 @@ external_type: github_stable
 release_type: prerelease
 release_tag: gpu
 ls_branch: gpu
-image_sbom: true
-image_provenance: true
 repo_vars:
   - EXT_GIT_BRANCH = 'master'
   - EXT_USER = 'rhasspy'

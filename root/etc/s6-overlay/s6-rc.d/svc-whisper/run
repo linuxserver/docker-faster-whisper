@@ -12,4 +12,5 @@ exec \
         --beam-size "${WHISPER_BEAM:-1}" \
         --language "${WHISPER_LANG:-en}" \
         --data-dir /config \
-        --download-dir /config
+        --download-dir /config \
+        ${LOCAL_ONLY:+--local-files-only}
