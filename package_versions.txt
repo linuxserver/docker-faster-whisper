@@ -32,7 +32,7 @@ dirmngr                      2.4.4-2ubuntu17.3                  deb
 dpkg                         1.22.6ubuntu6.1                    deb                      
 e2fsprogs                    1.47.0-2.4~exp1ubuntu4.1           deb                      
 faster-whisper               1.2.0                              python                   
-filelock                     3.18.0                             python                   
+filelock                     3.19.1                             python                   
 findutils                    4.9.0-5build1                      deb                      
 flatbuffers                  25.2.10                            python                   
 fsspec                       2025.7.0                           python                   
@@ -173,7 +173,7 @@ pinentry-curses              1.2.1-3ubuntu5                     deb
 pip                          25.2                               python                   
 platformdirs                 4.2.2                              python                   
 procps                       2:4.0.4-4ubuntu3.2                 deb                      
-protobuf                     6.31.1                             python                   
+protobuf                     6.32.0                             python                   
 publicsuffix                 20231001.0357-0.1                  deb                      
 python3                      3.12.3-0ubuntu2                    deb                      
 python3-minimal              3.12.3-0ubuntu2                    deb                      
