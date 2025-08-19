@@ -1,12 +1,36 @@
 #!/command/with-contenv bash
 # shellcheck shell=bash
 
-exec \
-    s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z localhost 10300" \
+# Set up debug option if enabled
+DEBUG_OPTION=""
+if [ "${WHISPER_LOG_LEVEL,,}" = "debug" ]; then
+    DEBUG_OPTION="--debug"
+fi
+
+# Launch with or without initial prompt based on whether it's set
+if [ -n "${WHISPER_INITIAL_PROMPT}" ]; then
+    # When initial prompt is provided, use it with proper quoting
+    exec \
+        s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z localhost 10300" \
         s6-setuidgid abc python3 -m wyoming_faster_whisper \
         --uri 'tcp://0.0.0.0:10300' \
         --model "${WHISPER_MODEL}" \
         --beam-size "${WHISPER_BEAM:-1}" \
         --language "${WHISPER_LANG:-en}" \
         --data-dir /config \
-        --download-dir /config
+        --download-dir /config \
+        ${DEBUG_OPTION} \
+        --initial-prompt "${WHISPER_INITIAL_PROMPT}"
+else
+    # No initial prompt
+    exec \
+        s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z localhost 10300" \
+        s6-setuidgid abc python3 -m wyoming_faster_whisper \
+        --uri 'tcp://0.0.0.0:10300' \
+        --model "${WHISPER_MODEL}" \
+        --beam-size "${WHISPER_BEAM:-1}" \
+        --language "${WHISPER_LANG:-en}" \
+        --data-dir /config \
+        --download-dir /config \
+        ${DEBUG_OPTION}
+fi
