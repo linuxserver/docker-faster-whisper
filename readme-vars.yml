@@ -14,6 +14,7 @@ development_versions: true
 development_versions_items:
   - {tag: "latest", desc: "Stable releases"}
   - {tag: "gpu", desc: "Releases with Nvidia GPU support"}
+  - {tag: "gpu-legacy", desc: "Legacy releases with Nvidia GPU support for pre-Turing cards"}
 # container parameters
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
