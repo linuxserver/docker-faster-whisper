@@ -16,6 +16,7 @@ development_versions: true
 development_versions_items:
   - {tag: "latest", desc: "Stable releases"}
   - {tag: "gpu", desc: "Releases with Nvidia GPU support (amd64 only)"}
+  - {tag: "gpu-legacy", desc: "Legacy releases with Nvidia GPU support for pre-Turing cards (amd64 only)"}
 # container parameters
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
@@ -86,6 +87,7 @@ init_diagram: |
   "faster-whisper:latest" <- Base Images
 # changelog
 changelogs:
+  - {date: "20.08.25:", desc: "Add gpu-legacy branch for pre-Turing cards."}
   - {date: "10.08.25:", desc: "Add support for local-only mode."}
   - {date: "30.12.24:", desc: "Add arm64 support for non-GPU builds."}
   - {date: "05.12.24:", desc: "Build from Github releases rather than Pypi."}
