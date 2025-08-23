@@ -52,7 +52,7 @@ gui-32                       UNKNOWN                            binary
 gui-64                       UNKNOWN                            binary                   
 gui-arm64                    UNKNOWN                            binary                   
 gzip                         1.12-1ubuntu3.1                    deb                      
-hf-xet                       1.1.7                              python                   
+hf-xet                       1.1.8                              python                   
 hostname                     3.23+nmu2ubuntu2                   deb                      
 huggingface-hub              0.34.4                             python                   
 humanfriendly                10.0                               python                   
@@ -123,8 +123,8 @@ libpcre2-8-0                 10.42-4ubuntu2.1                   deb
 libproc2-0                   2:4.0.4-4ubuntu3.2                 deb                      
 libpsl5t64                   0.21.2-1.1build1                   deb                      
 libpython3-stdlib            3.12.3-0ubuntu2                    deb                      
-libpython3.12-minimal        3.12.3-1ubuntu0.7                  deb                      
-libpython3.12-stdlib         3.12.3-1ubuntu0.7                  deb                      
+libpython3.12-minimal        3.12.3-1ubuntu0.8                  deb                      
+libpython3.12-stdlib         3.12.3-1ubuntu0.8                  deb                      
 libreadline8t64              8.2-4build1                        deb                      
 librtmp1                     2.4+20151223.gitfa8646d.1-2build7  deb                      
 libsasl2-2                   2.1.28+dfsg1-5ubuntu3.1            deb                      
@@ -180,12 +180,12 @@ python3-minimal              3.12.3-0ubuntu2                    deb
 python3-pip-whl              24.0+dfsg-1ubuntu1.2               deb                      
 python3-setuptools-whl       68.1.2-2ubuntu1.2                  deb                      
 python3-venv                 3.12.3-0ubuntu2                    deb                      
-python3.12                   3.12.3-1ubuntu0.7                  deb                      
-python3.12-minimal           3.12.3-1ubuntu0.7                  deb                      
-python3.12-venv              3.12.3-1ubuntu0.7                  deb                      
+python3.12                   3.12.3-1ubuntu0.8                  deb                      
+python3.12-minimal           3.12.3-1ubuntu0.8                  deb                      
+python3.12-venv              3.12.3-1ubuntu0.8                  deb                      
 pyyaml                       6.0.2                              python                   
 readline-common              8.2-4build1                        deb                      
-requests                     2.32.4                             python                   
+requests                     2.32.5                             python                   
 sed                          4.9-2build1                        deb                      
 sensible-utils               0.0.22                             deb                      
 setuptools                   80.9.0                             python                   
