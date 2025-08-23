@@ -44,7 +44,7 @@ app_setup_block: |
   For more information see the [faster-whisper docs](https://github.com/SYSTRAN/faster-whisper),
 # init diagram
 init_diagram: |
-  "faster-whisper:gpu": {
+  "faster-whisper:gpu-legacy": {
     docker-mods
     base {
       fix-attr +\nlegacy cont-init
@@ -82,7 +82,7 @@ init_diagram: |
   Base Images: {
     "baseimage-ubuntu:noble"
   }
-  "faster-whisper:gpu" <- Base Images
+  "faster-whisper:gpu-legacy" <- Base Images
 # changelog
 changelogs:
   - {date: "20.08.25:", desc: "Add gpu-legacy branch for pre-Turing cards."}
