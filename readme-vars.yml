@@ -13,7 +13,8 @@ available_architectures:
 development_versions: true
 development_versions_items:
   - {tag: "latest", desc: "Stable releases"}
-  - {tag: "gpu", desc: "Releases with Nvidia GPU support"}
+  - {tag: "gpu", desc: "Releases with Nvidia GPU support (amd64 only)"}
+  - {tag: "gpu-legacy", desc: "Legacy releases with Nvidia GPU support for pre-Turing cards (amd64 only)"}
 # container parameters
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
@@ -29,6 +30,7 @@ param_ports:
 # optional container parameters
 opt_param_usage_include_env: true
 opt_param_env_vars:
+  - {env_var: "LOCAL_ONLY", env_value: "", desc: "If set to `true`, or any other value, the container will not attempt to download models from HuggingFace and will only use locally-provided models."}
   - {env_var: "WHISPER_BEAM", env_value: "1", desc: "Number of candidates to consider simultaneously during transcription."}
   - {env_var: "WHISPER_LANG", env_value: "en", desc: "Language that you will speak to the add-on."}
 readonly_supported: true
@@ -83,6 +85,8 @@ init_diagram: |
   "faster-whisper:gpu" <- Base Images
 # changelog
 changelogs:
+  - {date: "20.08.25:", desc: "Add gpu-legacy branch for pre-Turing cards."}
+  - {date: "10.08.25:", desc: "Add support for local-only mode."}
   - {date: "05.12.24:", desc: "Build from Github releases rather than Pypi."}
   - {date: "18.07.24:", desc: "Rebase to Ubuntu Noble."}
   - {date: "19.05.24:", desc: "Bump CUDA to 12 on GPU branch."}
