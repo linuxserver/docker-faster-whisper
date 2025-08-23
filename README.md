@@ -60,8 +60,8 @@ This image provides various versions that are available via tags. Please read th
 | Tag | Available | Description |
 | :----: | :----: |--- |
 | latest | ✅ | Stable releases |
-| gpu | ✅ | Releases with Nvidia GPU support |
-| gpu-legacy | ✅ | Legacy releases with Nvidia GPU support for pre-Turing cards |
+| gpu | ✅ | Releases with Nvidia GPU support (amd64 only) |
+| gpu-legacy | ✅ | Legacy releases with Nvidia GPU support for pre-Turing cards (amd64 only) |
 
 ## Application Setup
 
@@ -302,7 +302,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
-* **20.08.25:** - Add gpu-legacy branch for Pascal & earlier cards.
+* **20.08.25:** - Add gpu-legacy branch for pre-Turing cards.
 * **10.08.25:** - Add support for local-only mode.
 * **05.12.24:** - Build from Github releases rather than Pypi.
 * **18.07.24:** - Rebase to Ubuntu Noble.
