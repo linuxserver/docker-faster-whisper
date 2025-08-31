@@ -4,7 +4,7 @@ adduser                      3.137ubuntu1                       deb
 apt                          2.8.3                              deb                      
 apt-utils                    2.8.3                              deb                      
 autocommand                  2.2.2                              python                   
-av                           15.0.0                             python                   
+av                           15.1.0                             python                   
 backports-tarfile            1.2.0                              python                   
 base-files                   13ubuntu10.3                       deb                      
 base-passwd                  3.6.3build1                        deb                      
@@ -52,7 +52,7 @@ gui-32                       UNKNOWN                            binary
 gui-64                       UNKNOWN                            binary                   
 gui-arm64                    UNKNOWN                            binary                   
 gzip                         1.12-1ubuntu3.1                    deb                      
-hf-xet                       1.1.8                              python                   
+hf-xet                       1.1.9                              python                   
 hostname                     3.23+nmu2ubuntu2                   deb                      
 huggingface-hub              0.34.4                             python                   
 humanfriendly                10.0                               python                   
@@ -193,12 +193,12 @@ sympy                        1.14.0                             python
 systemd-standalone-sysusers  255.4-1ubuntu8.10                  deb                      
 sysvinit-utils               3.08-6ubuntu3                      deb                      
 tar                          1.35+dfsg-3build1                  deb                      
-tokenizers                   0.21.4                             python                   
+tokenizers                   0.22.0                             python                   
 tomli                        2.0.1                              python                   
 tqdm                         4.67.1                             python                   
 typeguard                    4.3.0                              python                   
 typing-extensions            4.12.2                             python                   
-typing-extensions            4.14.1                             python                   
+typing-extensions            4.15.0                             python                   
 tzdata                       2025b-0ubuntu0.24.04.1             deb                      
 ubuntu-keyring               2023.11.28.1                       deb                      
 unminimize                   0.2.1                              deb                      
