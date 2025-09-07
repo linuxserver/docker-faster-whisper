@@ -20,7 +20,7 @@ common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
 param_usage_include_env: true
 param_env_vars:
-  - {env_var: "WHISPER_MODEL", env_value: "tiny-int8", desc: "Whisper model that will be used for transcription. From `tiny`, `base`, `small` and `medium`, all with `-int8` compressed variants", env_options: ["tiny-int8", "tiny", "base-int8", "base", "small-int8", "small", "medium-int8"]}
+  - {env_var: "WHISPER_MODEL", env_value: "tiny-int8", desc: "Whisper model that will be used for transcription. From [here](https://github.com/home-assistant/addons/blob/master/whisper/config.yaml#L25), smaller models also have `-int8` compressed variants"}
 param_usage_include_vols: true
 param_volumes:
   - {vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/data", desc: "Local path for Whisper config files."}
@@ -31,6 +31,7 @@ param_ports:
 opt_param_usage_include_env: true
 opt_param_env_vars:
   - {env_var: "LOCAL_ONLY", env_value: "", desc: "If set to `true`, or any other value, the container will not attempt to download models from HuggingFace and will only use locally-provided models."}
+  - {env_var: "USE_TRANSFORMERS", env_value: "", desc: "If set to `true`, or any other value, the container will interpret `WHISPER_MODEL` as a HuggingFace transformers model id."}
   - {env_var: "WHISPER_BEAM", env_value: "1", desc: "Number of candidates to consider simultaneously during transcription."}
   - {env_var: "WHISPER_LANG", env_value: "en", desc: "Language that you will speak to the add-on."}
 readonly_supported: true
@@ -85,6 +86,7 @@ init_diagram: |
   "faster-whisper:gpu" <- Base Images
 # changelog
 changelogs:
+  - {date: "07.09.25:", desc: "Add support for transformers models."}
   - {date: "20.08.25:", desc: "Add gpu-legacy branch for pre-Turing cards."}
   - {date: "10.08.25:", desc: "Add support for local-only mode."}
   - {date: "05.12.24:", desc: "Build from Github releases rather than Pypi."}
