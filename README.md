@@ -60,8 +60,8 @@ This image provides various versions that are available via tags. Please read th
 | Tag | Available | Description |
 | :----: | :----: |--- |
 | latest | ✅ | Stable releases |
-| gpu | ✅ | Releases with Nvidia GPU support |
-| gpu-legacy | ✅ | Legacy releases with Nvidia GPU support for pre-Turing cards |
+| gpu | ✅ | Releases with Nvidia GPU support (amd64 only) |
+| gpu-legacy | ✅ | Legacy releases with Nvidia GPU support for pre-Turing cards (amd64 only) |
 
 ## Application Setup
 
@@ -96,6 +96,7 @@ services:
       - TZ=Etc/UTC
       - WHISPER_MODEL=tiny-int8
       - LOCAL_ONLY= #optional
+      - USE_TRANSFORMERS= #optional
       - WHISPER_BEAM=1 #optional
       - WHISPER_LANG=en #optional
     volumes:
@@ -115,6 +116,7 @@ docker run -d \
   -e TZ=Etc/UTC \
   -e WHISPER_MODEL=tiny-int8 \
   -e LOCAL_ONLY= `#optional` \
+  -e USE_TRANSFORMERS= `#optional` \
   -e WHISPER_BEAM=1 `#optional` \
   -e WHISPER_LANG=en `#optional` \
   -p 10300:10300 \
@@ -133,8 +135,9 @@ Containers are configured using parameters passed at runtime (such as those abov
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
-| `-e WHISPER_MODEL=tiny-int8` | Whisper model that will be used for transcription. From `tiny`, `base`, `small` and `medium`, all with `-int8` compressed variants |
+| `-e WHISPER_MODEL=tiny-int8` | Whisper model that will be used for transcription. From [here](https://github.com/home-assistant/addons/blob/master/whisper/config.yaml#L25), smaller models also have `-int8` compressed variants |
 | `-e LOCAL_ONLY=` | If set to `true`, or any other value, the container will not attempt to download models from HuggingFace and will only use locally-provided models. |
+| `-e USE_TRANSFORMERS=` | If set to `true`, or any other value, the container will interpret `WHISPER_MODEL` as a HuggingFace transformers model id. |
 | `-e WHISPER_BEAM=1` | Number of candidates to consider simultaneously during transcription. |
 | `-e WHISPER_LANG=en` | Language that you will speak to the add-on. |
 | `-v /config` | Local path for Whisper config files. |
@@ -302,7 +305,8 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
-* **20.08.25:** - Add gpu-legacy branch for Pascal & earlier cards.
+* **07.09.25:** - Add support for transformers models.
+* **20.08.25:** - Add gpu-legacy branch for pre-Turing cards.
 * **10.08.25:** - Add support for local-only mode.
 * **05.12.24:** - Build from Github releases rather than Pypi.
 * **18.07.24:** - Rebase to Ubuntu Noble.
