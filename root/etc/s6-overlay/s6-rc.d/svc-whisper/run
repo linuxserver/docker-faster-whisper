@@ -10,4 +10,5 @@ exec \
         --language "${WHISPER_LANG:-en}" \
         --data-dir /config \
         --download-dir /config \
-        ${LOCAL_ONLY:+--local-files-only}
+        ${LOCAL_ONLY:+--local-files-only} \
+        ${USE_TRANSFORMERS:+--use-transformers}
