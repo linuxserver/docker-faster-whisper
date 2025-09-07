@@ -88,6 +88,7 @@ init_diagram: |
   "faster-whisper:latest" <- Base Images
 # changelog
 changelogs:
+  - {date: "07.09.25:", desc: "Add support for transformers models."}
   - {date: "20.08.25:", desc: "Add gpu-legacy branch for pre-Turing cards."}
   - {date: "10.08.25:", desc: "Add support for local-only mode."}
   - {date: "30.12.24:", desc: "Add arm64 support for non-GPU builds."}
