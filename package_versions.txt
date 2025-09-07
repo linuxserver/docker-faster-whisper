@@ -35,7 +35,7 @@ faster-whisper               1.2.0                              python
 filelock                     3.19.1                             python                   
 findutils                    4.9.0-5build1                      deb                      
 flatbuffers                  25.2.10                            python                   
-fsspec                       2025.7.0                           python                   
+fsspec                       2025.9.0                           python                   
 gcc-14-base                  14.2.0-4ubuntu2~24.04              deb                      
 gnupg                        2.4.4-2ubuntu17.3                  deb                      
 gnupg-l10n                   2.4.4-2ubuntu17.3                  deb                      
