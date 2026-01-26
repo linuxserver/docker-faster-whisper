@@ -95,10 +95,11 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Etc/UTC
-      - WHISPER_MODEL=tiny-int8
+      - DEBUG= #optional
       - LOCAL_ONLY= #optional
       - WHISPER_BEAM=1 #optional
-      - WHISPER_LANG=en #optional
+      - WHISPER_LANG=auto #optional
+      - WHISPER_MODEL=auto #optional
     volumes:
       - /path/to/faster-whisper/data:/config
     ports:
@@ -114,10 +115,11 @@ docker run -d \
   -e PUID=1000 \
   -e PGID=1000 \
   -e TZ=Etc/UTC \
-  -e WHISPER_MODEL=tiny-int8 \
+  -e DEBUG= `#optional` \
   -e LOCAL_ONLY= `#optional` \
   -e WHISPER_BEAM=1 `#optional` \
-  -e WHISPER_LANG=en `#optional` \
+  -e WHISPER_LANG=auto `#optional` \
+  -e WHISPER_MODEL=auto `#optional` \
   -p 10300:10300 \
   -v /path/to/faster-whisper/data:/config \
   --restart unless-stopped \
@@ -134,10 +136,11 @@ Containers are configured using parameters passed at runtime (such as those abov
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
-| `-e WHISPER_MODEL=tiny-int8` | Whisper model that will be used for transcription. From [here](https://github.com/SYSTRAN/faster-whisper/blob/master/faster_whisper/utils.py#L12-L31), all with `-int8` compressed variants |
+| `-e DEBUG=` | If set to `true`, or any other value, the container will output debug logs. |
 | `-e LOCAL_ONLY=` | If set to `true`, or any other value, the container will not attempt to download models from HuggingFace and will only use locally-provided models. |
 | `-e WHISPER_BEAM=1` | Number of candidates to consider simultaneously during transcription. |
-| `-e WHISPER_LANG=en` | Language that you will speak to the add-on. |
+| `-e WHISPER_LANG=auto` | Two character code for the language that you will speak to the add-on. |
+| `-e WHISPER_MODEL=auto` | Whisper model that will be used for transcription. From [here](https://github.com/SYSTRAN/faster-whisper/blob/master/faster_whisper/utils.py#L11-L31). |
 | `-v /config` | Local path for Whisper config files. |
 | `--read-only=true` | Run container with a read-only filesystem. Please [read the docs](https://docs.linuxserver.io/misc/read-only/). |
 
@@ -303,6 +306,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **26.01.26:** - Default to `auto` for model and language if not set.
 * **20.08.25:** - Add gpu-legacy branch for pre-Turing cards.
 * **10.08.25:** - Add support for local-only mode.
 * **30.12.24:** - Add arm64 support for non-GPU builds.
