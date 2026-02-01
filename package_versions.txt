@@ -165,7 +165,7 @@ ncurses-base                 6.4+20240113-1ubuntu2              deb
 ncurses-bin                  6.4+20240113-1ubuntu2              deb                      
 netbase                      6.4                                deb                      
 netcat-openbsd               1.226-1ubuntu2                     deb                      
-numpy                        2.4.1                              python                   
+numpy                        2.4.2                              python                   
 nvidia-cublas-cu12           12.9.1.4                           python                   
 nvidia-cudnn-cu12            9.18.1.3                           python                   
 onnxruntime                  1.23.2                             python                   
@@ -174,7 +174,7 @@ packaging                    26.0                               python  (+1 dupl
 passwd                       1:4.13+dfsg1-4ubuntu3.2            deb                      
 perl-base                    5.38.2-3.2ubuntu0.2                deb                      
 pinentry-curses              1.2.1-3ubuntu5                     deb                      
-pip                          25.3                               python                   
+pip                          26.0                               python                   
 platformdirs                 4.4.0                              python                   
 procps                       2:4.0.4-4ubuntu3.2                 deb                      
 protobuf                     6.33.5                             python                   
@@ -200,7 +200,7 @@ sysvinit-utils               3.08-6ubuntu3                      deb
 tar                          1.35+dfsg-3build1                  deb                      
 tokenizers                   0.22.2                             python                   
 tomli                        2.4.0                              python                   
-tqdm                         4.67.1                             python                   
+tqdm                         4.67.2                             python                   
 typer-slim                   0.21.1                             python                   
 typing-extensions            4.15.0                             python                   
 tzdata                       2025b-0ubuntu0.24.04.1             deb                      
