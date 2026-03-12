@@ -51,7 +51,7 @@ The architectures supported by this image are:
 | Architecture | Available | Tag |
 | :----: | :----: | ---- |
 | x86-64 | ✅ | amd64-\<version tag\> |
-| arm64 | ❌ | |
+| arm64 | ✅ | arm64v8-\<version tag\> |
 
 ## Version Tags
 
@@ -60,7 +60,7 @@ This image provides various versions that are available via tags. Please read th
 | Tag | Available | Description |
 | :----: | :----: |--- |
 | latest | ✅ | Stable releases |
-| gpu | ✅ | Releases with Nvidia GPU support (amd64 only) |
+| gpu | ✅ | Releases with Nvidia GPU support |
 | gpu-legacy | ✅ | Legacy releases with Nvidia GPU support for pre-Turing cards (amd64 only) |
 
 ## Application Setup
@@ -305,6 +305,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **12.03.26:** - Bump GPU branch to CUDA 13 and add arm64 support.
 * **26.01.26:** - Default to `auto` for model and language if not set.
 * **20.08.25:** - Add gpu-legacy branch for pre-Turing cards.
 * **10.08.25:** - Add support for local-only mode.
