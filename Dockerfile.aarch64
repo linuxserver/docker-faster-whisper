@@ -30,7 +30,7 @@ RUN \
     pip \
     wheel && \
   pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/ubuntu/ \
-    nvidia-cublas \
+    "nvidia-cublas~=13.0" \
     "nvidia-cudnn-cu13>=9.0,<10.0" \
     git+https://github.com/rhasspy/wyoming-faster-whisper@${WHISPER_VERSION} && \
   printf "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version && \
