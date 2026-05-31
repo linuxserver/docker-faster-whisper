@@ -59,8 +59,8 @@ hf-xet                       1.5.0                              python
 hostname                     3.23+nmu2ubuntu2                   deb                      
 httpcore                     1.0.9                              python                   
 httpx                        0.28.1                             python                   
-huggingface-hub              1.16.1                             python                   
-idna                         3.16                               python                   
+huggingface-hub              1.17.0                             python                   
+idna                         3.17                               python                   
 importlib-metadata           8.7.1                              python                   
 init-system-helpers          1.66ubuntu1                        deb                      
 jaraco-context               6.1.0                              python                   
