@@ -1,7 +1,7 @@
 NAME                         VERSION                            TYPE                    
 Simple Launcher              1.1.0.14                           binary  (+5 duplicates)  
 adduser                      3.137ubuntu1                       deb                      
-anyio                        4.14.1                             python                   
+anyio                        4.14.2                             python                   
 apt                          2.8.3                              deb                      
 apt-utils                    2.8.3                              deb                      
 autocommand                  2.2.2                              python                   
