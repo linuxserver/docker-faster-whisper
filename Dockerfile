@@ -22,7 +22,7 @@ RUN \
     python3-dev \
     python3-venv && \
   if [ -z ${WHISPER_VERSION+x} ]; then \
-    WHISPER_VERSION=$(curl -sX GET "https://api.github.com/repos/rhasspy/wyoming-faster-whisper/releases/latest" \
+    WHISPER_VERSION=$(curl -sX GET "https://api.github.com/repos/OHF-Voice/wyoming-faster-whisper/releases/latest" \
     | awk '/tag_name/{print $4;exit}' FS='[""]'); \
   fi && \
   python3 -m venv /lsiopy && \
@@ -30,7 +30,7 @@ RUN \
     pip \
     wheel && \
   pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/ubuntu/ \
-    git+https://github.com/rhasspy/wyoming-faster-whisper@${WHISPER_VERSION} && \
+    git+https://github.com/OHF-Voice/wyoming-faster-whisper@${WHISPER_VERSION} && \
   printf "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version && \
   echo "**** cleanup ****" && \
   apt-get purge -y --auto-remove \
