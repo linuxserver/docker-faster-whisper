@@ -8,7 +8,7 @@ release_tag: latest
 ls_branch: main
 repo_vars:
   - EXT_GIT_BRANCH = 'master'
-  - EXT_USER = 'rhasspy'
+  - EXT_USER = 'OHF-Voice'
   - EXT_REPO = 'wyoming-faster-whisper'
   - BUILD_VERSION_ARG = 'WHISPER_VERSION'
   - LS_USER = 'linuxserver'
