@@ -23,7 +23,7 @@ RUN \
     python3-venv && \
   if [ -z ${WHISPER_VERSION+x} ]; then \
     WHISPER_VERSION=$(curl -sX GET "https://api.github.com/repos/OHF-Voice/wyoming-faster-whisper/releases/latest" \
-    | awk '/tag_name/{print $4;exit}' FS='[""]'); \
+    | jq -r '.tag_name'); \
   fi && \
   python3 -m venv /lsiopy && \
   pip install -U --no-cache-dir \
