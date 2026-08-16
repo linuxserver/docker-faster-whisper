@@ -305,6 +305,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **16.08.26:** - Rebase to Ubuntu Resolute.
 * **26.01.26:** - Default to `auto` for model and language if not set.
 * **20.08.25:** - Add gpu-legacy branch for pre-Turing cards.
 * **10.08.25:** - Add support for local-only mode.
