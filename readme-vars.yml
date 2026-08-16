@@ -82,7 +82,7 @@ init_diagram: |
     svc-whisper -> legacy-services
   }
   Base Images: {
-    "baseimage-ubuntu:noble"
+    "baseimage-ubuntu:resolute"
   }
   "faster-whisper:latest" <- Base Images
 # changelog
