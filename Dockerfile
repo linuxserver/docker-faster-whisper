@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/linuxserver/baseimage-ubuntu:noble
+FROM ghcr.io/linuxserver/baseimage-ubuntu:resolute
 
 # set version label
 ARG BUILD_DATE
@@ -23,12 +23,12 @@ RUN \
     python3-venv && \
   if [ -z ${WHISPER_VERSION+x} ]; then \
     WHISPER_VERSION=$(curl -sX GET "https://api.github.com/repos/OHF-Voice/wyoming-faster-whisper/releases/latest" \
-    | awk '/tag_name/{print $4;exit}' FS='[""]'); \
+    | jq -r '.tag_name'); \
   fi && \
   python3 -m venv /lsiopy && \
   pip install -U --no-cache-dir \
     pip \
-    wheel && \
+    setuptools && \
   pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/ubuntu/ \
     "nvidia-cublas-cu12==12.9.1.4" \
     "nvidia-cudnn-cu12==9.10.2.21" \

@@ -85,6 +85,7 @@ init_diagram: |
   "faster-whisper:gpu-legacy" <- Base Images
 # changelog
 changelogs:
+  - {date: "16.08.26:", desc: "Rebase to Ubuntu Resolute."}
   - {date: "26.01.26:", desc: "Default to `auto` for model and language if not set."}
   - {date: "20.08.25:", desc: "Add gpu-legacy branch for pre-Turing cards."}
   - {date: "10.08.25:", desc: "Add support for local-only mode."}
