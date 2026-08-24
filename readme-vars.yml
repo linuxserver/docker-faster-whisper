@@ -80,7 +80,7 @@ init_diagram: |
     svc-whisper -> legacy-services
   }
   Base Images: {
-    "baseimage-ubuntu:noble"
+    "baseimage-ubuntu:resolute"
   }
   "faster-whisper:gpu-legacy" <- Base Images
 # changelog
