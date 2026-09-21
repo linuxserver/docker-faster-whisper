@@ -11,6 +11,7 @@ exec \
         --model "${WHISPER_MODEL:-auto}" \
         --beam-size "${WHISPER_BEAM:-1}" \
         --language "${WHISPER_LANG:-auto}" \
+        --compute-type "${WHISPER_COMPUTE_TYPE:-default}" \
         --data-dir /config \
         --download-dir /config \
         ${DEBUG:+--debug} \
