@@ -31,6 +31,7 @@ opt_param_env_vars:
   - {env_var: "DEBUG", env_value: "", desc: "If set to `true`, or any other value, the container will output debug logs."}
   - {env_var: "LOCAL_ONLY", env_value: "", desc: "If set to `true`, or any other value, the container will not attempt to download models from HuggingFace and will only use locally-provided models."}
   - {env_var: "WHISPER_BEAM", env_value: "1", desc: "Number of candidates to consider simultaneously during transcription."}
+  - {env_var: "WHISPER_COMPUTE_TYPE", env_value: "default", desc: "Compute type used by CTranslate2, e.g. `float16`, `int8_float16`, `int8`. Leave at `default` to let faster-whisper choose."}
   - {env_var: "WHISPER_LANG", env_value: "auto", desc: "Two character code for the language that you will speak to the add-on."}
   - {env_var: "WHISPER_MODEL", env_value: "auto", desc: "Whisper model that will be used for transcription. From [here](https://github.com/SYSTRAN/faster-whisper/blob/master/faster_whisper/utils.py#L11-L31)."}
 readonly_supported: true
@@ -85,6 +86,7 @@ init_diagram: |
   "faster-whisper:gpu-legacy" <- Base Images
 # changelog
 changelogs:
+  - {date: "18.09.26:", desc: "Add `WHISPER_COMPUTE_TYPE` for selecting the CTranslate2 compute type."}
   - {date: "16.08.26:", desc: "Rebase to Ubuntu Resolute."}
   - {date: "26.01.26:", desc: "Default to `auto` for model and language if not set."}
   - {date: "20.08.25:", desc: "Add gpu-legacy branch for pre-Turing cards."}
