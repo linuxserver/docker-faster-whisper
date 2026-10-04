@@ -5,7 +5,7 @@ anyio                          4.15.1                                 python
 apt                            3.2.0                                  deb                         
 apt-utils                      3.2.0                                  deb                         
 autocommand                    2.2.2                                  python                      
-av                             18.1.0                                 python                      
+av                             19.0.1                                 python                      
 backports-tarfile              1.2.0                                  python                      
 base-files                     14ubuntu6.2                            deb                         
 base-passwd                    3.6.8                                  deb                         
@@ -34,7 +34,7 @@ dirmngr                        2.4.8-4ubuntu3.1                       deb
 dpkg                           1.23.7ubuntu1                          deb                         
 e2fsprogs                      1.47.2-3ubuntu4                        deb                         
 faster-whisper                 1.2.1                                  python                      
-filelock                       4.0.4                                  python                      
+filelock                       4.0.10                                 python                      
 findutils                      4.10.0-3build2                         deb                         
 flatbuffers                    25.12.19                               python                      
 fsspec                         2026.9.0                               python                      
@@ -153,7 +153,7 @@ libsmartcols1                  2.41.3-3ubuntu2.2                      deb
 libsqlite3-0                   3.46.1-9ubuntu0.3                      deb                         
 libss2                         1.47.2-3ubuntu4                        deb                         
 libssh2-1t64                   1.11.1-1ubuntu0.26.04.4                deb                         
-libssl3t64                     3.5.5-1ubuntu3.5                       deb                         
+libssl3t64                     3.5.5-1ubuntu3.6                       deb                         
 libstdc++6                     16-20260322-1ubuntu1                   deb                         
 libsystemd0                    259.5-0ubuntu3.4                       deb                         
 libtasn1-6                     4.21.0-2                               deb                         
@@ -179,8 +179,8 @@ numpy                          2.5.3                                  python
 nvidia-cublas-cu12             12.9.1.4                               python                      
 nvidia-cudnn-cu12              9.10.2.21                              python                      
 onnxruntime                    1.30.0                                 python                      
-openssl                        3.5.5-1ubuntu3.5                       deb                         
-openssl-provider-legacy        3.5.5-1ubuntu3.5                       deb                         
+openssl                        3.5.5-1ubuntu3.6                       deb                         
+openssl-provider-legacy        3.5.5-1ubuntu3.6                       deb                         
 packaging                      26.0                                   python                      
 packaging                      26.3                                   python                      
 passwd                         1:4.17.4-2ubuntu3                      deb                         
