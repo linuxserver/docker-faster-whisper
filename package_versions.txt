@@ -5,7 +5,7 @@ anyio                          4.15.1                                 python
 apt                            3.2.0                                  deb                         
 apt-utils                      3.2.0                                  deb                         
 autocommand                    2.2.2                                  python                      
-av                             18.1.0                                 python                      
+av                             19.0.1                                 python                      
 backports-tarfile              1.2.0                                  python                      
 base-files                     14ubuntu6.2                            deb                         
 base-passwd                    3.6.8                                  deb                         
@@ -25,7 +25,7 @@ coreutils-from-uutils          0.0.0~ubuntu25                         deb
 cron                           3.0pl1-200ubuntu1                      deb                         
 cron-daemon-common             3.0pl1-200ubuntu1                      deb                         
 ctranslate2                    4.8.2                                  python                      
-curl                           8.18.0-1ubuntu2.5                      deb                         
+curl                           8.18.0-1ubuntu2.7                      deb                         
 dash                           0.5.12-12ubuntu3                       deb                         
 debconf                        1.5.92                                 deb                         
 debianutils                    5.23.2build1                           deb                         
@@ -34,7 +34,7 @@ dirmngr                        2.4.8-4ubuntu3.1                       deb
 dpkg                           1.23.7ubuntu1                          deb                         
 e2fsprogs                      1.47.2-3ubuntu4                        deb                         
 faster-whisper                 1.2.1                                  python                      
-filelock                       4.0.1                                  python                      
+filelock                       4.0.10                                 python                      
 findutils                      4.10.0-3build2                         deb                         
 flatbuffers                    25.12.19                               python                      
 fsspec                         2026.9.0                               python                      
@@ -72,7 +72,7 @@ hf-xet                         1.6.0                                  python
 hostname                       3.25build1                             deb                         
 httpcore                       1.0.9                                  python                      
 httpx                          0.28.1                                 python                      
-huggingface-hub                1.32.0                                 python                      
+huggingface-hub                1.33.0                                 python                      
 idna                           3.20                                   python                      
 importlib-metadata             8.7.1                                  python                      
 init-system-helpers            1.69                                   deb                         
@@ -97,10 +97,10 @@ libc6                          2.43-2ubuntu2.4                        deb
 libcap-ng0                     0.8.5-4build5                          deb                         
 libcom-err2                    1.47.2-3ubuntu4                        deb                         
 libcrypt1                      1:4.5.1-1                              deb                         
-libcurl4t64                    8.18.0-1ubuntu2.5                      deb                         
+libcurl4t64                    8.18.0-1ubuntu2.7                      deb                         
 libdb5.3t64                    5.3.28+dfsg2-10ubuntu1                 deb                         
 libdebconfclient0              0.280ubuntu1                           deb                         
-libexpat1                      2.7.4-1                                deb                         
+libexpat1                      2.7.4-1ubuntu0.2                       deb                         
 libext2fs2t64                  1.47.2-3ubuntu4                        deb                         
 libffi8                        3.5.2-4                                deb                         
 libgcc-s1                      16-20260322-1ubuntu1                   deb                         
@@ -150,10 +150,10 @@ libsemanage-common             3.9-1build1                            deb
 libsemanage2                   3.9-1build1                            deb                         
 libsepol2                      3.9-2                                  deb                         
 libsmartcols1                  2.41.3-3ubuntu2.2                      deb                         
-libsqlite3-0                   3.46.1-9ubuntu0.2                      deb                         
+libsqlite3-0                   3.46.1-9ubuntu0.3                      deb                         
 libss2                         1.47.2-3ubuntu4                        deb                         
 libssh2-1t64                   1.11.1-1ubuntu0.26.04.4                deb                         
-libssl3t64                     3.5.5-1ubuntu3.5                       deb                         
+libssl3t64                     3.5.5-1ubuntu3.6                       deb                         
 libstdc++6                     16-20260322-1ubuntu1                   deb                         
 libsystemd0                    259.5-0ubuntu3.4                       deb                         
 libtasn1-6                     4.21.0-2                               deb                         
@@ -177,8 +177,8 @@ netbase                        6.5build1                              deb
 netcat-openbsd                 1.234-1                                deb                         
 numpy                          2.5.3                                  python                      
 onnxruntime                    1.30.0                                 python                      
-openssl                        3.5.5-1ubuntu3.5                       deb                         
-openssl-provider-legacy        3.5.5-1ubuntu3.5                       deb                         
+openssl                        3.5.5-1ubuntu3.6                       deb                         
+openssl-provider-legacy        3.5.5-1ubuntu3.6                       deb                         
 packaging                      26.0                                   python                      
 packaging                      26.3                                   python                      
 passwd                         1:4.17.4-2ubuntu3                      deb                         
@@ -200,7 +200,7 @@ python3.14-minimal             3.14.4-1ubuntu0.2                      deb
 python3.14-venv                3.14.4-1ubuntu0.2                      deb                         
 pyyaml                         6.0.3                                  python                      
 readline-common                8.3-4                                  deb                         
-rust-coreutils                 0.8.0-0ubuntu3                         deb                         
+rust-coreutils                 0.10.0-1ubuntu2~26.04.1                deb                         
 sed                            4.9-2ubuntu1                           deb                         
 sensible-utils                 0.0.26build1                           deb                         
 setuptools                     84.0.0                                 python                      
