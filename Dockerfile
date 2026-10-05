@@ -30,6 +30,7 @@ RUN \
     pip \
     setuptools && \
   pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/ubuntu/ \
+    "av>=18.0.0,<19.0.0" \
     nvidia-cublas-cu12 \
     "nvidia-cudnn-cu12>=9.0,<10.0" \
     git+https://github.com/OHF-Voice/wyoming-faster-whisper@${WHISPER_VERSION} && \
