@@ -34,7 +34,7 @@ dirmngr                        2.4.8-4ubuntu3.1                       deb
 dpkg                           1.23.7ubuntu1                          deb                         
 e2fsprogs                      1.47.2-3ubuntu4                        deb                         
 faster-whisper                 1.2.1                                  python                      
-filelock                       4.0.10                                 python                      
+filelock                       4.0.12                                 python                      
 findutils                      4.10.0-3build2                         deb                         
 flatbuffers                    25.12.19                               python                      
 fsspec                         2026.9.0                               python                      
