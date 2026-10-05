@@ -97,6 +97,7 @@ services:
       - DEBUG= #optional
       - LOCAL_ONLY= #optional
       - WHISPER_BEAM=1 #optional
+      - WHISPER_COMPUTE_TYPE=default #optional
       - WHISPER_LANG=auto #optional
       - WHISPER_MODEL=auto #optional
     volumes:
@@ -117,6 +118,7 @@ docker run -d \
   -e DEBUG= `#optional` \
   -e LOCAL_ONLY= `#optional` \
   -e WHISPER_BEAM=1 `#optional` \
+  -e WHISPER_COMPUTE_TYPE=default `#optional` \
   -e WHISPER_LANG=auto `#optional` \
   -e WHISPER_MODEL=auto `#optional` \
   -p 10300:10300 \
@@ -138,6 +140,7 @@ Containers are configured using parameters passed at runtime (such as those abov
 | `-e DEBUG=` | If set to `true`, or any other value, the container will output debug logs. |
 | `-e LOCAL_ONLY=` | If set to `true`, or any other value, the container will not attempt to download models from HuggingFace and will only use locally-provided models. |
 | `-e WHISPER_BEAM=1` | Number of candidates to consider simultaneously during transcription. |
+| `-e WHISPER_COMPUTE_TYPE=default` | Compute type used by CTranslate2, e.g. `float16`, `int8_float16`, `int8`. Leave at `default` to let faster-whisper choose. |
 | `-e WHISPER_LANG=auto` | Two character code for the language that you will speak to the add-on. |
 | `-e WHISPER_MODEL=auto` | Whisper model that will be used for transcription. From [here](https://github.com/SYSTRAN/faster-whisper/blob/master/faster_whisper/utils.py#L11-L31). |
 | `-v /config` | Local path for Whisper config files. |
@@ -305,6 +308,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **18.09.26:** - Add `WHISPER_COMPUTE_TYPE` for selecting the CTranslate2 compute type.
 * **16.08.26:** - Rebase to Ubuntu Resolute.
 * **26.01.26:** - Default to `auto` for model and language if not set.
 * **20.08.25:** - Add gpu-legacy branch for pre-Turing cards.
