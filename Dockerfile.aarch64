@@ -30,6 +30,7 @@ RUN \
     pip \
     setuptools && \
   pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/ubuntu/ \
+    "av>=18.0.0,<19.0.0" \
     git+https://github.com/OHF-Voice/wyoming-faster-whisper@${WHISPER_VERSION} && \
   printf "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version && \
   echo "**** cleanup ****" && \
