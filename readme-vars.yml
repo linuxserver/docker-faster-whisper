@@ -86,6 +86,7 @@ init_diagram: |
   "faster-whisper:gpu-legacy" <- Base Images
 # changelog
 changelogs:
+  - {date: "05.10.26:", desc: "Pin `av` to 18.x."}
   - {date: "18.09.26:", desc: "Add `WHISPER_COMPUTE_TYPE` for selecting the CTranslate2 compute type."}
   - {date: "16.08.26:", desc: "Rebase to Ubuntu Resolute."}
   - {date: "26.01.26:", desc: "Default to `auto` for model and language if not set."}
