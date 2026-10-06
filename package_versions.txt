@@ -5,7 +5,7 @@ anyio                        4.15.1                             python
 apt                          2.8.3                              deb                      
 apt-utils                    2.8.3                              deb                      
 autocommand                  2.2.2                              python                   
-av                           19.0.1                             python                   
+av                           18.1.0                             python                   
 backports-tarfile            1.2.0                              python                   
 base-files                   13ubuntu10.5                       deb                      
 base-passwd                  3.6.3build1                        deb                      
@@ -32,7 +32,7 @@ dirmngr                      2.4.4-2ubuntu17.6                  deb
 dpkg                         1.22.6ubuntu6.6                    deb                      
 e2fsprogs                    1.47.0-2.4~exp1ubuntu4.1           deb                      
 faster-whisper               1.2.1                              python                   
-filelock                     4.0.10                             python                   
+filelock                     4.0.12                             python                   
 findutils                    4.9.0-5build1                      deb                      
 flatbuffers                  25.12.19                           python                   
 fsspec                       2026.9.0                           python                   
