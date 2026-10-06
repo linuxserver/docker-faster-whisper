@@ -5,7 +5,7 @@ anyio                          4.15.1                                 python
 apt                            3.2.0                                  deb                         
 apt-utils                      3.2.0                                  deb                         
 autocommand                    2.2.2                                  python                      
-av                             19.0.1                                 python                      
+av                             18.1.0                                 python                      
 backports-tarfile              1.2.0                                  python                      
 base-files                     14ubuntu6.2                            deb                         
 base-passwd                    3.6.8                                  deb                         
