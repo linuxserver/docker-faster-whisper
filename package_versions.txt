@@ -12,7 +12,7 @@ base-passwd                    3.6.8                                  deb
 bash                           5.3-2ubuntu1                           deb                         
 bash-completion                1:2.16.0-8build1                       deb                         
 bsdutils                       1:2.41.3-3ubuntu2.2                    deb                         
-ca-certificates                20260601~26.04.1                       deb                         
+ca-certificates                20260816ubuntu0.26.04.1                deb                         
 catatonit                      0.2.1-2build1                          deb                         
 cli                            UNKNOWN                                binary                      
 cli-32                         UNKNOWN                                binary                      
@@ -33,7 +33,7 @@ dirmngr                        2.4.8-4ubuntu3.1                       deb
 dpkg                           1.23.7ubuntu1                          deb                         
 e2fsprogs                      1.47.2-3ubuntu4                        deb                         
 faster-whisper                 1.2.1                                  python                      
-filelock                       4.2.2                                  python                      
+filelock                       4.2.4                                  python                      
 findutils                      4.10.0-3build2                         deb                         
 flatbuffers                    25.12.19                               python                      
 fsspec                         2026.9.0                               python                      
@@ -67,9 +67,9 @@ gzip                           1.14-1~exp2ubuntu1.1                   deb
 h11                            0.16.0                                 python                      
 hf-xet                         1.7.0                                  python                      
 hostname                       3.25build1                             deb                         
-httpcore2                      2.13.1                                 python                      
-httpx2                         2.13.1                                 python                      
-huggingface-hub                2.2.0                                  python                      
+httpcore2                      2.16.0                                 python                      
+httpx2                         2.16.0                                 python                      
+huggingface-hub                2.3.0                                  python                      
 idna                           3.20                                   python                      
 importlib-metadata             8.7.1                                  python                      
 init-system-helpers            1.69                                   deb                         
@@ -117,7 +117,7 @@ libksba8                       1.6.7-2build1                          deb
 libldap-common                 2.6.10+dfsg-1ubuntu5                   deb                         
 libldap2                       2.6.10+dfsg-1ubuntu5                   deb                         
 liblz4-1                       1.10.0-8                               deb                         
-liblzma5                       5.8.3-1                                deb                         
+liblzma5                       5.8.3-1ubuntu0.1                       deb                         
 libmd0                         1.1.0-2build4                          deb                         
 libmount1                      2.41.3-3ubuntu2.2                      deb                         
 libncursesw6                   6.6+20251231-1                         deb                         
@@ -152,10 +152,10 @@ libss2                         1.47.2-3ubuntu4                        deb
 libssh2-1t64                   1.11.1-1ubuntu0.26.04.4                deb                         
 libssl3t64                     3.5.5-1ubuntu3.7                       deb                         
 libstdc++6                     16-20260322-1ubuntu1                   deb                         
-libsystemd0                    259.5-0ubuntu3.4                       deb                         
+libsystemd0                    259.9-0ubuntu0.1                       deb                         
 libtasn1-6                     4.21.0-2                               deb                         
 libtinfo6                      6.6+20251231-1                         deb                         
-libudev1                       259.5-0ubuntu3.4                       deb                         
+libudev1                       259.9-0ubuntu0.1                       deb                         
 libunistring5                  1.3-2build1                            deb                         
 libuuid1                       2.41.3-3ubuntu2.2                      deb                         
 libxxhash0                     0.8.3-2build1                          deb                         
@@ -178,12 +178,11 @@ nvidia-cudnn-cu12              9.10.2.21                              python
 onnxruntime                    1.31.0                                 python                      
 openssl                        3.5.5-1ubuntu3.7                       deb                         
 openssl-provider-legacy        3.5.5-1ubuntu3.7                       deb                         
-packaging                      26.0                                   python                      
-packaging                      26.3                                   python                      
+packaging                      26.3                                   python     (+1 duplicate)   
 passwd                         1:4.17.4-2ubuntu3                      deb                         
 perl-base                      5.40.1-7ubuntu0.3                      deb                         
 pinentry-curses                1.3.2-3ubuntu1                         deb                         
-pip                            26.2.1                                 python                      
+pip                            26.2.2                                 python                      
 platformdirs                   4.4.0                                  python                      
 procps                         2:4.0.4-9ubuntu1                       deb                         
 protobuf                       7.36.2                                 python                      
@@ -202,9 +201,9 @@ readline-common                8.3-4                                  deb
 rust-coreutils                 0.10.0-1ubuntu2~26.04.1                deb                         
 sed                            4.9-2ubuntu1                           deb                         
 sensible-utils                 0.0.26build1                           deb                         
-setuptools                     84.0.0                                 python                      
+setuptools                     84.2.1                                 python                      
 stdlib                         go1.27.1                               go-module                   
-systemd-standalone-sysusers    259.5-0ubuntu3.4                       deb                         
+systemd-standalone-sysusers    259.9-0ubuntu0.1                       deb                         
 sysvinit-utils                 3.15-5ubuntu1                          deb                         
 tar                            1.35+dfsg-4ubuntu0.4                   deb                         
 tokenizers                     0.23.3                                 python                      
@@ -212,11 +211,11 @@ tomli                          2.4.0                                  python
 tqdm                           4.70.1                                 python                      
 truststore                     0.10.5                                 python                      
 typing-extensions              4.16.0                                 python                      
-tzdata                         2026c-0ubuntu0.26.04.1                 deb                         
+tzdata                         2026e-0ubuntu0.26.04.1                 deb                         
 ubuntu-keyring                 2023.11.28.1build1                     deb                         
 util-linux                     2.41.3-3ubuntu2.2                      deb                         
 wheel                          0.46.3                                 python                      
 wyoming                        1.10.2                                 python                      
 wyoming-faster-whisper         3.8.1                                  python                      
 zipp                           3.23.0                                 python                      
-zlib1g                         1:1.3.dfsg+really1.3.1-1ubuntu3.1      deb                         
+zlib1g                         1:1.3.dfsg+really1.3.1-1ubuntu3.2      deb                         
